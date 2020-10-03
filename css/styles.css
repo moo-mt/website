@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 100vh;
+    text-align: center;
+    width: 100vw;
+    vertical-align: middle;
+}
+
+.verticalhorizontal img{
+    /* width: 50vw; */
+    height: 50vh;
+}
