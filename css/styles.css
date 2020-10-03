@@ -13,6 +13,6 @@ body{
 }
 
 .verticalhorizontal img{
-    /* width: 50vw; */
-    height: 50vh;
+    max-width: 90vw;
+    max-height: 90vh;
 }
