@@ -2,3 +2,4 @@ title: Moo
 email: info@moo.mt
 exclude: [".jekyll-cache", ".github", "Gemfile*", ".gitignore", ".git", "README.md", ".kodiak.toml", ".nojekyll", "LICENSE"]
 ver: 0.0.0-local
+google_analytics: G-5T4XML72GE
