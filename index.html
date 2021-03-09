@@ -20,7 +20,6 @@
     <meta name="theme-color" content="#f6f6f6">
 
     <link rel="stylesheet" href="{{ "css/styles.css" | relative_url }}?{{site.time | date: '%s'}}">
-
 </head>
 
 <body>
@@ -28,7 +27,7 @@
         <img src="{{ "/images/biglogo.png" | relative_url }}" alt="moo.mt" />
     </div>
 
+    <footer>{{ site.ver }}</footer>
     {% include analytics.html %}
 </body>
-<!-- {{ site.ver }} -->
 </html>
