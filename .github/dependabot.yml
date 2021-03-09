@@ -1,18 +1,7 @@
 version: 2
 updates:
-- package-ecosystem: "github-actions"
-  directory: "/"
-  schedule:
-    interval: "daily"
-  labels:
-      - "dependencies"
-      - "automerge"
-      - "github_actions"
 - package-ecosystem: bundler
   directory: "/"
   schedule:
     interval: daily
-  labels:
-    - "dependencies"
-    - "automerge"
-    - "python"
+  open-pull-requests-limit: 10
