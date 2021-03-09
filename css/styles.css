@@ -4,4 +4,6 @@ body { margin: 0; padding: 0; background-color: #f6f6f6; overflow: hidden; }
 
 .verticalhorizontal img { max-width: 90vw; max-height: 90vh; }
 
+footer { position: absolute; bottom: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #a0a0a0; right: 0; }
+
 /*# sourceMappingURL=styles.css.map */
