@@ -1,3 +1,4 @@
 title: Moo
 email: info@moo.mt
 exclude: [".jekyll-cache", ".github", "Gemfile*", ".gitignore", ".git", "README.md", "configs"]
+ver: 0.0.0-local
