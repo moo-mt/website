@@ -64,7 +64,7 @@ jobs:
         echo "CommitsSinceVersionSourcePadded: ${{ steps.gitversion.outputs.commitsSinceVersionSourcePadded }}"
         echo "CommitDate: ${{ steps.gitversion.outputs.commitDate }}"
 
-    - name: Replace Version in mkdocs.yml
+    - name: Replace Version in _config.yml
       uses: datamonsters/replace-action@v2
       with:
         files: '_config.yml'
@@ -76,5 +76,17 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: site
+        name: moo.mt_${{ steps.gitversion.outputs.semVer }}
         path: ./_site
+    
+    - name: Create tag
+      uses: actions/github-script@v3
+      with:
+        github-token: ${{ github.token }}
+        script: |
+          github.git.createRef({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            ref: "refs/tags/${{ steps.gitversion.outputs.semVer }}",
+            sha: context.sha
+          })
