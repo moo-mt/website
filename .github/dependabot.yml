@@ -10,6 +10,7 @@ updates:
       - "github_actions"
 - package-ecosystem: bundler
   directory: "/"
+  vendor: true
   schedule:
     interval: daily
   labels:
