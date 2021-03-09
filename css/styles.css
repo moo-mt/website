@@ -1,19 +1,7 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #f6f6f6;
-    overflow: hidden;
-}
+body { margin: 0; padding: 0; background-color: #f6f6f6; overflow: hidden; }
 
-.verticalhorizontal {
-    display: table-cell;
-    height: 100vh;
-    text-align: center;
-    width: 100vw;
-    vertical-align: middle;
-}
+.verticalhorizontal { display: table-cell; height: 100vh; text-align: center; width: 100vw; vertical-align: middle; }
 
-.verticalhorizontal img{
-    max-width: 90vw;
-    max-height: 90vh;
-}
+.verticalhorizontal img { max-width: 90vw; max-height: 90vh; }
+
+/*# sourceMappingURL=styles.css.map */
