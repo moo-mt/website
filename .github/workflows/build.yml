@@ -68,7 +68,7 @@ jobs:
       uses: datamonsters/replace-action@v2
       with:
         files: '_config.yml'
-        replacements: '$ver=${{ steps.gitversion.outputs.semVer }}'
+        replacements: '0.0.0-local=${{ steps.gitversion.outputs.semVer }}'
 
     - name: 'Build Site'
       run: bundle exec jekyll build
