@@ -1,4 +1,7 @@
-body{
+---
+---
+
+body {
     margin: 0;
     padding: 0;
     background-color: #f6f6f6;
@@ -11,9 +14,9 @@ body{
     text-align: center;
     width: 100vw;
     vertical-align: middle;
-}
 
-.verticalhorizontal img{
-    max-width: 90vw;
-    max-height: 90vh;
+    img {
+        max-width: 90vw;
+        max-height: 90vh;
+    }
 }
