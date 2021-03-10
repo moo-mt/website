@@ -86,9 +86,12 @@ jobs:
       with:
         github-token: ${{ github.token }}
         script: |
-          github.git.createRef({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            ref: "refs/tags/${{ steps.gitversion.outputs.semVer }}",
-            sha: context.sha
-          })
+          var newRef = "refs/tags/${{ steps.gitversion.outputs.semVer }}";
+          
+          if (newRef!==context.ref)
+            github.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: "refs/tags/${{ steps.gitversion.outputs.semVer }}",
+              sha: context.sha
+            })
