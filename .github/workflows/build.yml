@@ -86,12 +86,18 @@ jobs:
       with:
         github-token: ${{ github.token }}
         script: |
-          var newRef = "refs/tags/${{ steps.gitversion.outputs.semVer }}";
+          var ref = "refs/tags/${{ steps.gitversion.outputs.semVer }}";
           
-          if (newRef!==context.ref)
+          if (ref!==context.ref)
+          {
             github.git.createRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              ref: "refs/tags/${{ steps.gitversion.outputs.semVer }}",
+              ref: ref,
               sha: context.sha
             })
+          }
+          else
+          {
+            console.log("Commit already tagged, cannot tag again");
+          }
