@@ -9,7 +9,7 @@ self.addEventListener("message", (event) => {
 });
 
 workbox.routing.registerRoute(
-  new RegExp('/*'),
+  new RegExp('*'),
   new workbox.strategies.NetworkFirst({
     cacheName: CACHE
   })
