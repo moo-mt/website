@@ -1,0 +1,4 @@
+mode: Mainline
+branches:
+  develop:
+    mode: ContinuousDeployment
