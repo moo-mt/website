@@ -76,12 +76,13 @@ jobs:
         name: moo.mt_${{ steps.gitversion.outputs.semVer }}
         path: ./_site
     
-    - uses: jsmrcaga/action-netlify-deploy@master
+    - uses: South-Paw/action-netlify-deploy@v1.2.0
       with:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        NETLIFY_DEPLOY_TO_PROD: true
-        build_directory: ./_site
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+        draft: false
+        build-dir: ./_site
       
     - name: Create tag
       uses: actions/github-script@v3
