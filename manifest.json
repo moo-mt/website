@@ -6,13 +6,13 @@ layout: null
     "short_name": "moo",
     "icons": [
         {
-            "src": "{{ "/android-chrome-192x192.png" | relative_url }}",
+            "src": "android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "{{ "/android-chrome-512x512.png" | relative_url }}",
+            "src": "android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
@@ -20,6 +20,6 @@ layout: null
     ],
     "theme_color": "{{site.theme-color}}",
     "background_color": "#f6f6f6",
-    "start_url": "{{ "/" | absolute_url }}",
+    "start_url": "./",
     "display": "standalone"
 }
