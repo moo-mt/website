@@ -4,11 +4,9 @@ on:
   push:
     branches-ignore:
       - master
-      - develop
   pull_request:
     branches:
       - master
-      - develop
 
 jobs:
   build:
