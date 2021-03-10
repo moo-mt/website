@@ -1,17 +1,12 @@
-name: Build
+name: Build and Publish Develop
 
 on:
   push:
-    branches-ignore:
-      - master
-      - develop
-  pull_request:
     branches:
-      - master
       - develop
 
 jobs:
-  build:
+  release-develop:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -81,6 +76,11 @@ jobs:
         name: moo.mt_${{ steps.gitversion.outputs.semVer }}
         path: ./_site
     
+    - uses: jsmrcaga/action-netlify-deploy@master
+      with:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      
     - name: Create tag
       uses: actions/github-script@v3
       with:
