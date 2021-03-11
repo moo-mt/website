@@ -1,9 +1,9 @@
-body { margin: 0; padding: 0; background-color: #f6f6f6; overflow: hidden; }
-
-.verticalhorizontal { display: table-cell; height: 100vh; text-align: center; width: 100vw; vertical-align: middle; }
-
-.verticalhorizontal img { max-width: 90vw; max-height: 90vh; }
+body, html { margin: 0; padding: 0; background-color: #f6f6f6; overflow: hidden; height: 100%; }
 
 footer { position: absolute; bottom: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #a0a0a0; right: 0; }
+
+.heroBackground { height: 100%; max-height: 800; background-image: url("/images/hero/high-clouds.png"); background-position-y: top; background-position-x: top; background-repeat: no-repeat; background-size: cover; }
+
+.hero { height: 100%; max-height: 800; background-image: url("/images/hero/grass-and-cow.png"); background-position-y: bottom; background-position-x: bottom; background-repeat: no-repeat; background-size: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
