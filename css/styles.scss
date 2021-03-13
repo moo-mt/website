@@ -1,38 +1,215 @@
 ---
 ---
 
-body, html {
+$color1: #ffffff;
+$color2: #fbdcc0;
+$color3: #abb0b2;
+$color4: #111111;
+$color5: #333333;
+$color6: #4d3825;
+
+$text-normal: $color4;
+$text-light: $color1;
+$text-light-2: $color2;
+
+$border-radius1: 5px;
+$border-radius2: 30px;
+
+$font-family-headings: "Baloo Paaji 2", cursive;
+$font-family-default: "Roboto", sans-serif;
+
+$button-light-background: $color1;
+$button-light-text: $color5;
+$button-light-background-hover: $color2;
+$button-light-text-hover: $color4;
+
+$button-dark-background: $color6;
+$button-dark-text: $color1;
+$button-dark-background-hover: $color4;
+$button-dark-text-hover: $color2;
+
+*,
+*:focus {
+    outline: none !important;
+    box-sizing: border-box;
+}
+
+body,
+html {
     margin: 0;
     padding: 0;
-    background-color: #f6f6f6;
-    overflow: hidden;
-    height:100%;
-}
-
-footer{
-    position: absolute;
-    bottom:0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #a0a0a0;
-    right:0;
-}
-
-.heroBackground{
+    color: $text-normal;
+    font-family: $font-family-default;
     height: 100%;
-    max-height: 800;
-    background-image: url('{{ "/images/hero/high-clouds.png" | relative_url }}');
-    background-position-y: top;
-    background-position-x: top;
-    background-repeat: no-repeat;
+    position: relative;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-headings;
+    color: $color6;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: -0.04em;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+#header {
+    position: relative;
+    height: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url('{{ "/images/hero/high-clouds.png" | relative_url }}');
+    background-attachment: fixed;
+    color: $text-light;
+
+    #header-inner {
+        position: relative;
+        height: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-image: url('{{ "/images/hero/grass-and-cow.png" | relative_url }}');
+
+        #header-inner-content {
+            width: 960px;
+            max-width: 100%;
+            text-align: left;
+
+            h1,
+            h2,
+            h3 {
+                color: $color1;
+                line-height: 1em;
+                text-shadow: 0 0 10px rgba($color6, 0.7);
+            }
+
+            button {
+                box-shadow: 0 0 10px rgba($color6, 0.7);
+            }
+        }
+    }
 }
 
-.hero{
+#services {
+}
+
+#industries {
+    background: $color2;
+}
+
+#expertise {
+    background: $color3;
+}
+
+#contact {
+    position: relative;
     height: 100%;
-    max-height: 800;
-    background-image: url('{{ "/images/hero/grass-and-cow.png" | relative_url }}');
-    background-position-y: bottom;
-    background-position-x: bottom;
-    background-repeat: no-repeat;
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url('{{ "/images/hero/grass-and-cow.png" | relative_url }}');
+
+    #contact-inner {
+        #contact-inner-content {
+            width: 300px;
+            max-width: 100%;
+
+            button {
+                width:100%;
+            }
+        }
+    }
+}
+
+button,
+.button {
+    padding: 10px 30px;
+    margin: 0;
+    font-family: $font-family-headings;
+    border-radius: $border-radius2;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+
+    &.light {
+        background: $button-light-background;
+        color: $button-light-text;
+
+        &:hover {
+            background: $button-light-background-hover;
+            color: $button-light-text-hover;
+        }
+    }
+
+    &.dark {
+        background: $button-dark-background;
+        color: $button-dark-text;
+
+        &:hover {
+            background: $button-dark-background-hover;
+            color: $button-dark-text-hover;
+        }
+    }
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    border-radius: $border-radius1;
+    border: 1px solid $color3;
+    font-family: $font-family-default;
+    resize: none;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+textarea{
+    min-height: 200px;
+}
+
+.min-100vw {
+    min-width: 100vw;
+}
+
+.min-100vh {
+    min-height: 100vh;
+}
+
+.flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.flex-center-top {
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    text-align: center;
+    flex-direction: column;
 }
