@@ -15,4 +15,18 @@ $(function () {
 
         return false;
     });
+
+    new TypeIt("#heroTyper", {
+        speed: 75,
+        loop: true,
+        loopDelay: 5000,
+        waitUntilVisible: true,
+        cursorChar: '_'
+      })
+        .type("reliable solutions", {delay: 1500}).move(-10).delete(-8)
+        .type("ingenious", {delay: 1500}).delete(-9)
+        .type("cutting edge", {delay: 1500}).delete(-12)
+        .type("scalable", {delay: 1500}).delete(-8)
+        .type("innovative", {delay: 1500})
+        .go();
 });
