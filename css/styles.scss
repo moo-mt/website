@@ -78,6 +78,7 @@ h3 {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center top;
     background-image: url('{{ "/images/hero/high-clouds.png" | relative_url }}');
     background-attachment: fixed;
     color: $text-light;
