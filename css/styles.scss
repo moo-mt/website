@@ -76,11 +76,11 @@ h3 {
 #header {
     position: relative;
     height: 100%;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-image: url('{{ "/images/hero/high-clouds.png" | relative_url }}');
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: $text-light;
 
     #header-inner {
