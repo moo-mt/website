@@ -7,3 +7,4 @@ ver: 0.0.0-local
 google_analytics: G-5T4XML72GE
 livereload: true
 theme-color: "#349261"
+host: 0.0.0.0
