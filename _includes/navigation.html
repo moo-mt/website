@@ -1,50 +1,41 @@
-<nav id="main-menu" class="main-nav navbar navbar-collapse navbar-expand-lg fixed-top navbar-dark">
-    <a class="navbar-brand" href="#header">
-        <img src="/assets/images/logo.png">
-    </a>
+<nav id="main-menu">   
+    <div id="logo" class="mobile-only">
+        <a href="/">
+            <img class="logo" src="{{ "images/big-logo.png" | relative_url }}">
+        </a>
+    </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse  offcanvas-collapse justify-content-md-center" id="navbarSupportedContent">
+    <div id="navigation" class="hidden">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#booking">
-                    BOOKING
+                <a class="nav-link" href="#home">
+                    Home
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#classes">
-                    CLASSES
+                <a class="nav-link" href="#services">
+                    Services
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#prices">
-                    PRICES
-                </a>
-            </li>
-            <li class="nav-logo">
-                <a href="#">
-                    <img src="/assets/images/logo.png">
+                <a class="nav-link" href="#industries">
+                    Industries
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#timetable">
-                    TIMETABLE
+                <a class="nav-link" href="#expertise">
+                    Expertise
                 </a>
-            </li>
+            </li>         
             <li class="nav-item">
                 <a class="nav-link" href="#contact">
-                    CONTACT
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.rebeluk.com/product-category/affiliates/shieldwall/"
-                    target="_blank">
-                    APPAREL
+                    Contact
                 </a>
             </li>
         </ul>
+    </div>
+
+    <div id="toggle" class="mobile-only">
+        <a href="/"></a>
     </div>
 </nav>

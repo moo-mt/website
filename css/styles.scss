@@ -73,7 +73,37 @@ h3 {
     font-size: 3em;
 }
 
-#header {
+a {
+    text-decoration: none;
+}
+
+#main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba($color6, 0.6);
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+
+    #navigation {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                padding: 25px;
+                a {
+                    font-size: 1em;
+                    color: $color1;
+                }
+            }
+        }
+    }
+}
+
+#home {
     position: relative;
     height: 100%;
     background-size: cover;
@@ -83,18 +113,18 @@ h3 {
     background-attachment: fixed;
     color: $text-light;
 
-    #header-inner {
+    #home-inner {
         position: absolute;
         height: 100%;
-        width:100%;
-        bottom:0;
-        left:0;
+        width: 100%;
+        bottom: 0;
+        left: 0;
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center bottom;
         background-image: url('{{ "/images/hero/grass-and-cow.png" | relative_url }}');
 
-        #header-inner-content {
+        #home-inner-content {
             width: 960px;
             max-width: 100%;
             text-align: left;
@@ -138,10 +168,10 @@ h3 {
         #contact-inner-content {
             width: 340px;
             max-width: 100%;
-            padding:20px;
+            padding: 20px;
 
             button {
-                width:100%;
+                width: 100%;
             }
         }
     }
@@ -191,7 +221,7 @@ textarea {
     font-size: 1em;
 }
 
-textarea{
+textarea {
     min-height: 200px;
 }
 
@@ -219,20 +249,109 @@ textarea{
     flex-direction: column;
 }
 
-@media (max-width: 991.98px) {
+.mobile-only {
+    display: none;
+}
+.desktop-only {
+    display: block;
+}
+
+@media (max-width: 768px) {
     h1 {
         font-size: 4em;
     }
-    
+
     h2 {
         font-size: 3em;
     }
-    
+
     h3 {
         font-size: 2em;
     }
 
-    #header {
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    #main-menu {
+        #logo {
+            float: left;
+
+            a {
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+
+                img {
+                    float: left;
+                    max-height: 60px;
+                    padding: 10px;
+                }
+            }
+        }
+
+        #navigation {
+            top: 60px;
+            position: absolute;
+            text-align: right;
+            background: rgba($color6, 0.4);
+            width: 100%;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: block;
+
+                li {
+                    display: block;
+                    padding: 5px 20px;
+                    a {
+                        font-size: 1em;
+                        color: $color1;
+                    }
+                }
+            }
+
+            &.hidden{
+            display:none;
+            }
+        }
+
+        #toggle {
+            float: right;
+
+            a {
+                float:right;
+                display: inline-block;
+                background:$color1;
+                width:40px;
+                height:40px;
+                padding:0;
+                margin:10px;
+            }
+        }
+    }
+
+    #home {
         background-attachment: initial;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1em;
     }
 }
