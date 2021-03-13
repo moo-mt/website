@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relative_url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | relative_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | relative_url }}">
-    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+    <link rel="manifest" href="{{ "/manifest.webmanifest" | relative_url }}">
     <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | relative_url }}" color="{{site.theme-color}}">
     <meta name="msapplication-TileColor" content="#f6f6f6">
     <meta name="theme-color" content="#f6f6f6">
@@ -35,6 +35,6 @@
     {{ content }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.1/jquery.stellar.min.js" integrity="sha512-MZiEKWRoqHmTsaur2/0bTQaOT5DqmnMDWuXoYXgNwFzCq+J2rQRIa4uVOmkL7SnIIhis6V4IcPnhqKxgOt8zDg==" crossorigin="anonymous"></script>    
-    <script src="{{ "js/script.js" | relative_url }}?{{site.time | date: '%s' }}"></script>
+    <script src="{{ 'js/script.js' | relative_url }}?{{site.time | date: '%s' }}"></script>
 </body>
 </html>
