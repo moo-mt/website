@@ -15,7 +15,7 @@ $text-light-2: $color2;
 $border-radius1: 5px;
 $border-radius2: 30px;
 
-$font-family-headings: "Baloo Paaji 2", cursive;
+$font-family-headings: "Poppins", cursive;
 $font-family-default: "Roboto", sans-serif;
 
 $button-light-background: $color1;
@@ -79,6 +79,12 @@ a {
     text-decoration: none;
 }
 
+.text-gradient-light-purple-light-orange {
+    background: linear-gradient(to right, #732bd8, #8a36ff, #ff64b9, #ff4376, #ff9393);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #main-menu {
     position: fixed;
     top: 0;
@@ -137,7 +143,6 @@ a {
             h3 {
                 color: $color1;
                 line-height: 1em;
-                text-shadow: 0 0 10px rgba($color6, 0.7);
             }
 
             button {
