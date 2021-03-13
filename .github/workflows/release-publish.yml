@@ -35,7 +35,7 @@ jobs:
         replacements: '0.0.0-local=${{ steps.gitversion.outputs.semVer }}'
 
     - name: 'Build Site'
-      run: bundle exec jekyll build
+      run: JEKYLL_ENV=production bundle exec jekyll build
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
