@@ -5,24 +5,38 @@
     <div id="contact-inner-content">
       <div>
         <form name="submit-to-google-sheet">
+          <input name="name" type="text" placeholder="Name" required />
           <input name="email" type="email" placeholder="Email" required />
           <textarea name="message" placeholder="Your message" required></textarea>
           <button type="submit" class="dark">Send</button>
         </form>
       </div>
     </div>
-</div>
- 
+  </div>
+
 </section>
 
 <script>
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbztm8jU3-eo9W1NUHy4eAMlGGut36z13ARzLHDHZO55ZOhPGCskuLi4Qk5bxdApDEqq/exec";
+  const webhookURL = 'https://discord.com/api/webhooks/820406078276763689/jnMcnuw_I8Cjd8wR-eOK2q0-ozKglalyHrHNfeK5ipR7Ayj67vELm_xYHBKVAeaEta4v';
+
   const form = document.forms["submit-to-google-sheet"];
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    var formData = new FormData(form);
+
+    var payload = JSON.stringify({
+      username: formData.get("name"),
+      content: `${formData.get("email")}\r\n${formData.get("message")}`
+    });
+
+    fetch(webhookURL, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: payload
+    })
       .then((response) => console.log("Success!", response))
       .catch((error) => console.error("Error!", error.message));
   });
