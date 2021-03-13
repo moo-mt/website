@@ -1,6 +1,6 @@
 <nav id="main-menu">   
     <div id="logo" class="mobile-only">
-        <a href="/">
+        <a href="{{ "/" | relative_url }}">
             <img class="logo" src="{{ "images/moo.png" | relative_url }}">
         </a>
     </div>
@@ -8,7 +8,7 @@
     <div id="navigation" class="hidden">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#home">
+                <a class="nav-link" href="{{ "/" | relative_url }}">
                     Home
                 </a>
             </li>
