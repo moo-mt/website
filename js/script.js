@@ -19,7 +19,6 @@ $(function () {
     new TypeIt("#heroTyper", {
         speed: 75,
         loop: true,
-        loopDelay: 5000,
         waitUntilVisible: true,
         cursorChar: '_'
       })
@@ -27,6 +26,6 @@ $(function () {
         .type("ingenious", {delay: 1500}).delete(-9)
         .type("cutting edge", {delay: 1500}).delete(-12)
         .type("scalable", {delay: 1500}).delete(-8)
-        .type("innovative", {delay: 1500})
+        .type("innovative", {delay: 5000})
         .go();
 });
