@@ -88,6 +88,9 @@ h3 {
         height: 100%;
         width:100%;
         bottom:0;
+        left:0;
+        top:0;
+        right:0;
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -97,6 +100,7 @@ h3 {
             width: 960px;
             max-width: 100%;
             text-align: left;
+            padding: 20px;
 
             h1,
             h2,
@@ -134,8 +138,9 @@ h3 {
 
     #contact-inner {
         #contact-inner-content {
-            width: 300px;
+            width: 340px;
             max-width: 100%;
+            padding:20px;
 
             button {
                 width:100%;
@@ -214,4 +219,18 @@ textarea{
     justify-content: top;
     text-align: center;
     flex-direction: column;
+}
+
+@media (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
 }
