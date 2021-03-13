@@ -46,21 +46,6 @@ html {
     line-height: 1.5em;
 }
 
-body:after{
-    content:"";
-    position:fixed; /* stretch a fixed position to the whole screen */
-    top:0;
-    height:100vh; /* fix for mobile browser address bar appearing disappearing */
-    left:0;
-    right:0;
-    z-index:-1; /* needed to keep in the background */
-    background: url(https://www.w3schools.com/css/trolltunga.jpg) center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 h1,
 h2,
 h3,
@@ -228,3 +213,15 @@ textarea{
     text-align: center;
     flex-direction: column;
 }
+
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    #header {
+        background-attachment: scroll;
+    }
+  }
+  
+  @supports not (-webkit-touch-callout: none) {
+    /* CSS for other than iOS devices */ 
+  }
