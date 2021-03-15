@@ -116,7 +116,7 @@ a {
 
 @keyframes animateCloudInverted {
     0% {
-        background-position-x: 100%;
+        transform: 100%;
     }
     100% {
         background-position-x: 0%;
@@ -137,7 +137,7 @@ a {
         bottom: 0;
         left: 0;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         background-position: center center;
         background-image: url('{{ "/images/hero/clouds.png" | relative_url }}');
         background-attachment: fixed;
@@ -151,8 +151,8 @@ a {
         width: 100%;
         top: 0;
         left: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-repeat: repeat-x;
         background-position: center center;
         background-image: url('{{ "/images/hero/clouds.png" | relative_url }}');
         background-attachment: fixed;
