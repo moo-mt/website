@@ -105,15 +105,61 @@ a {
     }
 }
 
+@keyframes animateCloud {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+@keyframes animateCloudInverted {
+    0% {
+        background-position-x: 100%;
+    }
+    100% {
+        background-position-x: 0%;
+    }
+}
+
 #home {
     position: relative;
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url('{{ "/images/hero/high-clouds.png" | relative_url }}');
-    background-attachment: fixed;
+    background: rgb(0,64,119);
+    background: linear-gradient(171deg, rgba(0,64,119,1) 0%, rgba(0,212,255,1) 100%);
     color: $text-light;
+
+    #home-background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('{{ "/images/hero/clouds.png" | relative_url }}');
+        background-attachment: fixed;
+        opacity: 0.5;
+        animation: animateCloud 240s linear infinite;
+    }
+
+    #home-background-inverted {
+        position: absolute;
+        height: 40%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('{{ "/images/hero/clouds.png" | relative_url }}');
+        background-attachment: fixed;
+        opacity: 1;
+        transform: rotateX(-180deg) rotateY(-180deg);
+        animation: animateCloudInverted 120s linear infinite;
+    }
 
     #home-inner {
         position: absolute;
@@ -121,11 +167,12 @@ a {
         width: 100%;
         bottom: 0;
         left: 0;
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center bottom;
+        background-position: center center;
+        background-attachment: fixed;
         background-image: url('{{ "/images/hero/grass-and-cow.png" | relative_url }}');
-
+    
         #home-inner-content {
             width: 1300px;
             max-width: 100%;
