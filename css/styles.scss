@@ -110,13 +110,13 @@ a {
         background-position-x: 0%;
     }
     100% {
-        background-position-x: 100%;
+        background-position-x: 100vw;
     }
 }
 
 @keyframes animateCloudInverted {
     0% {
-        transform: 100%;
+        background-position-x:100vw;
     }
     100% {
         background-position-x: 0%;
