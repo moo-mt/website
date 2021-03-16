@@ -206,11 +206,7 @@ a {
 #contact {
     position: relative;
     height: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-image: url('{{ "/images/postbox.png" | relative_url }}');
-
+    
     #contact-inner {
         #contact-inner-content {
             width: 340px;
