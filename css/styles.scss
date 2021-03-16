@@ -139,6 +139,7 @@ a {
         background-size: cover;
         background-repeat: repeat-x;
         background-position: center center;
+        background-position-x: 0;
         background-image: url('{{ "/images/hero/clouds.png" | relative_url }}');
         background-attachment: fixed;
         opacity: 0.5;
