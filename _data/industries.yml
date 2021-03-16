@@ -13,6 +13,6 @@
 - industry: Retail
   icon: store
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
-- industry: Geographic Information Systems(GIS)
-  icon: map
+- industry: Geographic Information Systems (GIS)
+  icon: map-marked-alt
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
