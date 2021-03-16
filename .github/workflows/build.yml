@@ -48,7 +48,6 @@ jobs:
 
     - name: 'Deploy to Netlify'
       uses: South-Paw/action-netlify-deploy@v1.2.0
-      if: ${{ github.event_name == 'pull_request' }}
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
