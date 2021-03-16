@@ -45,7 +45,6 @@ html {
     font-size: 1em;
     line-height: 1.5em;
     scroll-behavior: smooth;
-
 }
 
 h1,
@@ -64,7 +63,7 @@ h6 {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 5vw;
 }
 
 h2 {
@@ -126,7 +125,7 @@ a {
 #home {
     position: relative;
     height: 100%;
-    background: rgb(0,64,119);
+    background: rgb(0, 64, 119);
     background: linear-gradient(171deg, rgb(31, 131, 219) 0%, rgb(54, 177, 235) 100%);
     color: $text-light;
 
@@ -172,9 +171,9 @@ a {
         background-repeat: no-repeat;
         background-position: bottom center;
         background-image: url('{{ "/images/hero/grass-and-cow.png" | relative_url }}');
-    
+
         #home-inner-content {
-            width: 1300px;
+            width: 90%;
             max-width: 100%;
             text-align: left;
             padding: 20px;
@@ -305,17 +304,17 @@ textarea {
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 4em;
-    }
+    // h1 {
+    //     font-size: 4em;
+    // }
 
-    h2 {
-        font-size: 3em;
-    }
+    // h2 {
+    //     font-size: 3em;
+    // }
 
-    h3 {
-        font-size: 2em;
-    }
+    // h3 {
+    //     font-size: 2em;
+    // }
 
     .mobile-only {
         display: block;
@@ -365,8 +364,8 @@ textarea {
                 }
             }
 
-            &.hidden{
-            display:none;
+            &.hidden {
+                display: none;
             }
         }
 
@@ -374,13 +373,13 @@ textarea {
             float: right;
 
             a {
-                float:right;
+                float: right;
                 display: inline-block;
-                background:$color1;
-                width:40px;
-                height:40px;
-                padding:0;
-                margin:10px;
+                background: $color1;
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                margin: 10px;
             }
         }
     }
@@ -391,15 +390,23 @@ textarea {
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 3em;
-    }
+    // h1 {
+    //     font-size: 3em;
+    // }
 
-    h2 {
-        font-size: 2em;
-    }
+    // h2 {
+    //     font-size: 2em;
+    // }
 
-    h3 {
-        font-size: 1em;
-    }
+    // h3 {
+    //     font-size: 1em;
+    // }
+
+    // #home-inner-content {
+    //     width: 100% !important;
+
+    //     h1 {
+    //         font-size: 2em;
+    //     }
+    // }
 }
