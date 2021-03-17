@@ -1,7 +1,6 @@
 ---
 ---
 
-
 @mixin gradient-text {
     @include gradient-text-stops(#556fff, #556fff, #e05fc4, #f767a6, #ff798e);
 }
@@ -12,7 +11,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 $color1: #ffffff;
 $color2: #a1a1a1;
@@ -192,21 +190,23 @@ a {
 }
 
 #services {
+    padding: 100px 0;
     h2 {
         text-transform: uppercase;
         @include gradient-text();
         font-size: 40pt;
-        padding: 100px 0;
+        padding-bottom: 100px;
     }
 
     .service {
         text-align: left;
-        margin: 10px;
+        margin: 20px;
         padding: 40px;
-        width: 300px;
+        width: 350px;
         display: inline-block;
         background-color: $color3;
-        box-shadow: 0px 0px 20px #a1a1a1;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+
         animation: fadeIn ease 1s;
 
         h3 {
@@ -218,6 +218,29 @@ a {
 
 #industries {
     background: $color3;
+    padding: 100px;
+
+    .industry {
+        width: 350px;
+        display: inline-block;
+
+        .iconInShape {
+            position: relative;
+            display: inline-block;
+
+            svg {
+                filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.1));
+            }
+
+            .fas {
+                font-size: 30pt;
+                @include gradient-text();
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        }
+    }
 }
 
 #expertise {

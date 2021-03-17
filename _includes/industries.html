@@ -1,13 +1,31 @@
 <section id="industries" class="flex-center-center">
-  <h2>Industries we know</h2>
-
   <div class="industries">
     {% for industry in site.data.industries %}
     <div class="industry">
-      <i class="fas fa-{{industry.icon}}"></i>
+      <div class="iconInShape">
+        <svg width="100" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fff"
+            d="M86.2,51.4C58.6,97.5,-53.4,96.5,-81.8,49.9C-110.3,3.3,-55.1,-88.8,0.9,-88.3C56.9,-87.8,113.7,5.3,86.2,51.4Z">
+          </path>
+        </svg>
+        <i class="fas fa-{{industry.icon}}"></i>
+      </div>
       <h3>{{industry.name}}</h3>
       <p>{{industry.description}}</p>
     </div>
     {% endfor %}
   </div>
 </section>
+
+<script>
+  function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+  }
+
+  document.querySelectorAll(".industries .industry .iconInShape svg").forEach(shape => {
+    shape.style.transform = "rotate(" + getRandomIntInclusive(0,360) + "deg)";
+
+  });
+</script>
