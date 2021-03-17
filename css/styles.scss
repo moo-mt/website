@@ -8,6 +8,9 @@ $color4: #111111;
 $color5: #333333;
 $color6: #4d3825;
 
+$sky-dark: rgb(31, 131, 219);
+$sky-light: rgb(54, 177, 235);
+
 $text-normal: $color4;
 $text-light: $color1;
 $text-light-2: $color2;
@@ -100,7 +103,7 @@ a {
     position: relative;
     height: 100%;
     background: rgb(0, 64, 119);
-    background: linear-gradient(171deg, rgb(31, 131, 219) 0%, rgb(54, 177, 235) 100%);
+    background: linear-gradient(171deg, $sky-dark 0%, $sky-light 100%);
     color: $text-light;
 
     #home-background {
@@ -157,10 +160,7 @@ a {
             h3 {
                 color: $color1;
                 line-height: 1em;
-            }
-
-            button {
-                box-shadow: 0 0 10px rgba($color6, 0.7);
+                text-shadow: 0px 0px 15px $sky-dark;
             }
         }
     }
@@ -175,6 +175,7 @@ a {
 
     img {
         width: 13vh;
+        filter: drop-shadow(0px 0px 20px $sky-dark);
     }
 }
 
