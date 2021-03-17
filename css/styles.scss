@@ -1,6 +1,19 @@
 ---
 ---
 
+
+@mixin gradient-text {
+    @include gradient-text-stops(#556fff, #556fff, #e05fc4, #f767a6, #ff798e);
+}
+
+@mixin gradient-text-stops($color-stops...) {
+    background: linear-gradient(to right, $color-stops);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 $color1: #ffffff;
 $color2: #a1a1a1;
 $color3: #f7f7f7;
@@ -143,14 +156,14 @@ a {
             text-align: left;
             padding: 20px;
 
-            h1{
+            h1 {
                 font-size: 5vw;
             }
 
             h2 {
                 font-size: 4em;
             }
-            
+
             h3 {
                 font-size: 3em;
             }
@@ -166,7 +179,7 @@ a {
     }
 }
 
-#logo{
+#logo {
     position: absolute;
     z-index: 999;
     width: 100%;
@@ -179,15 +192,11 @@ a {
 }
 
 #services {
-    h2{
+    h2 {
         text-transform: uppercase;
-        background: linear-gradient(to right,#556fff,#556fff,#e05fc4,#f767a6,#ff798e);
-        background-clip: text;
+        @include gradient-text();
         font-size: 40pt;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         padding: 100px 0;
-
     }
 
     .service {
@@ -200,9 +209,7 @@ a {
         box-shadow: 0px 0px 20px #a1a1a1;
         animation: fadeIn ease 1s;
 
-
-
-        h3{
+        h3 {
             font-size: 18pt;
             font-weight: bold;
         }
@@ -217,7 +224,6 @@ a {
 }
 
 #contact {
-    
     #contact-inner {
         #contact-inner-content {
             width: 340px;
@@ -311,9 +317,7 @@ textarea {
 }
 
 @media (max-width: 768px) {
-    
 }
 
 @media (max-width: 480px) {
-
 }
