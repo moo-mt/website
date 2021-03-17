@@ -156,6 +156,11 @@ a {
 
             h1 {
                 font-size: 5vw;
+
+                strong {
+                    @include gradient-text-stops(#ff6557,#ff367c);
+                    font-weight: bolder;
+                }
             }
 
             h2 {
@@ -171,7 +176,7 @@ a {
             h3 {
                 color: $color1;
                 line-height: 1em;
-                text-shadow: 0px 0px 15px $sky-dark;
+                filter: drop-shadow(0px 0px 7px $sky-dark);
             }
         }
     }

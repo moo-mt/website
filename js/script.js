@@ -4,9 +4,9 @@ new TypeIt("#heroTyper", {
   waitUntilVisible: true,
   cursorChar: '_'
 })
-  .type("reliable solutions", {delay: 1500}).move(-10).delete(-8)
-  .type("ingenious", {delay: 1500}).delete(-9)
-  .type("cutting edge", {delay: 1500}).delete(-12)
-  .type("scalable", {delay: 1500}).delete(-8)
-  .type("innovative", {delay: 10000})
+  .type("<strong>reliable</strong> solutions", {delay: 1500}).move(-10).delete(-8)
+  .type("<strong>ingenious</strong>", {delay: 1500}).delete(-9)
+  .type("<strong>cutting edge</strong>", {delay: 1500}).delete(-12)
+  .type("<strong>scalable</strong>", {delay: 1500}).delete(-8)
+  .type("<strong>innovative</strong>", {delay: 10000})
   .go();
