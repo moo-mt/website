@@ -1,3 +1,13 @@
-<section id="expertise" class=" min-100vh flex-center-center">
-  <h1>Expertise</h1>
+<section id="expertise" class="flex-center-center">
+  <h2>Our Expertise</h2>
+
+  <div class="expertise">
+    {% for experience in site.data.expertise %}
+    <div class="experience">
+      <i class="fas fa-{{experience.icon}}"></i>
+      <h3>{{experience.name}}</h3>
+      <p>{{experience.description}}</p>
+    </div>
+    {% endfor %}
+  </div>
 </section>

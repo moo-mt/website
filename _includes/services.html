@@ -1,3 +1,12 @@
-<section id="services" class="min-100vh flex-center-center">
-  <h1>Services</h1>
+<section id="services" class="flex-center-center">
+  <h2>What we do</h2>
+
+  <div class="services">
+    {% for service in site.data.services %}
+    <div class="service">
+      <h3>{{service.name}}</h3>
+      <p>{{service.description}}</p>
+    </div>
+    {% endfor %}
+  </div>
 </section>

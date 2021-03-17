@@ -1,3 +1,13 @@
-<section id="industries" class=" min-100vh flex-center-center">
-  <h1>Industries</h1>
+<section id="industries" class="flex-center-center">
+  <h2>Industries we know</h2>
+
+  <div class="industries">
+    {% for industry in site.data.industries %}
+    <div class="industry">
+      <i class="fas fa-{{industry.icon}}"></i>
+      <h3>{{industry.name}}</h3>
+      <p>{{industry.description}}</p>
+    </div>
+    {% endfor %}
+  </div>
 </section>
