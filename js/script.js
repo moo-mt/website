@@ -1,8 +1,3 @@
-document.getElementById("toggle").addEventListener("click", function(e){
-  document.getElementById("navigation").classList.toggle("hidden");
-  e.preventDefault();
-});
-
 new TypeIt("#heroTyper", {
   speed: 75,
   loop: true,
