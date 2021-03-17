@@ -1,7 +1,8 @@
 new TypeIt("#heroTyper", {
   speed: 75,
   loop: true,
-  waitUntilVisible: true
+  waitUntilVisible: true,
+  cursorChar: '_'
 })
   .type("reliable solutions", {delay: 1500}).move(-10).delete(-8)
   .type("ingenious", {delay: 1500}).delete(-9)
