@@ -302,33 +302,36 @@ a {
         flex-wrap: wrap;
         justify-content: center;
         max-width: 960px;
-        padding-top:50px;
+        padding-top: 50px;
 
         .experience {
             flex-grow: 1;
-            width:190px;
+            width: 190px;
             text-align: center;
             color: $color7;
             font-weight: 250;
             line-height: 1.8em;
-            padding:40px 0;
+            padding: 40px 0;
             text-transform: uppercase;
             opacity: 0.7;
+            transition: all 0.25s linear;
+            cursor: default;
 
-
-            i{
+            i {
                 font-size: 30pt;
-                margin:20px;
+                margin: 20px;
                 color: $color2;
+                transition: all 0.25s linear;
+                @include gradient-text();
+                filter: grayscale(100%);
             }
 
-            &:hover{
+            &:hover {
                 opacity: 1;
 
-                i{
-                    @include gradient-text();
-
-                }
+                i {
+                filter: grayscale(0%);
+            }
             }
         }
     }
@@ -336,7 +339,7 @@ a {
 
 #contact {
     padding: 100px 10px;
-    
+
     #contact-inner {
         #contact-inner-content {
             width: 340px;

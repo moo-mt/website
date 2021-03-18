@@ -2,7 +2,8 @@
   <h2>Our Expertise</h2>
 
   <div class="expertise">
-    {% for experience in site.data.expertise %}
+    {% assign expertise = site.data.expertise | sort: "name" %}
+    {% for experience in expertise %}
     <div class="experience">
       <i class="fas fa-{{experience.icon}}"></i>
       <h4>{{experience.name}}</h4>
