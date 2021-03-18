@@ -1,7 +1,7 @@
 - name: iGaming
   icon: dice
   description: Lorem ipsum is simply dummy text of the printing typesetting lorem ipsum been text.
-- name: Finance
+- name: FinTech
   icon: money-bill-wave
   description: Lorem ipsum is simply dummy text of the printing typesetting lorem ipsum been text.
 - name: Software and Platforms

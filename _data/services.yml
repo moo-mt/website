@@ -2,15 +2,17 @@
   description: We are well positioned to help drive change because of our team's variety of cross-industry perspectives, independence and broad experience developing and deploying leading-edge technologies and products.
 - name: Train
   description: We help develop companies' technology workforce, making their teams know more and work better together. We build bespoke training material and sessions so that teams develop the skills of tomorrow.
-- name: Demonstrate
-  description: We work with teams to deliver your great ideas, vision and strategies in iterative proof of concepts. We assist organizations in prototyping solutions and making data-driven decisions on the feasibility of your ideas.
+- name: Audit
+  description: We have been at both ends of audits. Our industry certified auditors work with you to audit your organization or to help your company prepare for Software, Infrastructure, Architecture or Security audits.
 - name: Recruit
   description: We work with companies that want to venture into areas where they have no experience. Our skilled consultants can interview your candidates and give recommendations depending on your vision or project.
+- name: Secure
+  description: We build security-first cultures. Our security architects work with organizations to help them build and implement security policies, starting from their corporate networks to their production networks and applications.
+- name: Demonstrate
+  description: We work with teams to deliver your great ideas, vision and strategies in iterative proof of concepts. We assist organizations in prototyping solutions and making data-driven decisions on the feasibility of your ideas.
 - name: Outsource
   description: We have good relationships with a variety of reputable tech outsourcing companies. Depending on your needs we can bridge the gap between your organization and the outsourced teams to maximize business performance and cut operating costs.
 - name: Innovate
   description: We understand that innovation can be difficult. Sometimes you need to introduce fresh ideas from external talent. We work with organizations and run innovation and brainstorming sessions to challenge your norms.
-- name: Audit
-  description: Software, Infrastructure, Architecture, Security
 - name: Implement
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit
