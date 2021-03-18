@@ -30,7 +30,7 @@
 
     var payload = JSON.stringify({
       username: formData.get("name"),
-      content: `${formData.get("email")}\r\n${formData.get("message")}`
+      content: `${formData.get("email")}\r\n${formData.get("phone")}\r\n${formData.get("message")}`
     });
 
     fetch(webhookURL, {
