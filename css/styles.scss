@@ -352,20 +352,11 @@ a {
                 font-size: 30pt;
                 margin: 20px;
                 color: $color2;
-                transition: all 0.25s linear;
-                @include gradient-text-stops(#ee0979, #ff6a00);
-                filter: grayscale(100%);
-                opacity: 0.5;
             }
 
             &:hover {
                 opacity: 1;
                 filter: grayscale(0%);
-
-                i {
-                    filter: grayscale(0%);
-                    opacity: 1;
-                }
             }
         }
     }
