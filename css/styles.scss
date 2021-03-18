@@ -22,6 +22,7 @@ $color4: #828282;
 $color5: #333333;
 $color6: #232323;
 $color7: #828282;
+$color8: #dfdfdf;
 
 $sky-dark: rgb(31, 131, 219);
 $sky-light: rgb(54, 177, 235);
@@ -31,7 +32,6 @@ $text-light: $color1;
 $text-light-2: $color2;
 
 $border-radius1: 5px;
-$border-radius2: 30px;
 
 $font-family-headings: "Poppins", cursive;
 $font-family-default: "Roboto", sans-serif;
@@ -78,6 +78,20 @@ h6 {
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: -0.04em;
+
+    &.gradient {
+        @include gradient-text();
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 50pt;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40pt;
 }
 
 a {
@@ -100,6 +114,12 @@ a {
     100% {
         background-position-x: 0%;
     }
+}
+
+
+.inner-limit {
+    width: 100%;
+    max-width: 1170px;
 }
 
 #home {
@@ -186,6 +206,7 @@ a {
     }
 }
 
+
 #logo {
     position: absolute;
     z-index: 999;
@@ -202,17 +223,11 @@ a {
     background: $color3;
     padding: 100px 10px;
 
-    h2 {
-        text-transform: uppercase;
-        @include gradient-text();
-        font-size: 40pt;
-        padding-bottom: 100px;
-    }
-
     .services {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 50px;
 
         .service {
             flex-grow: 1;
@@ -301,12 +316,11 @@ a {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 960px;
         padding-top: 50px;
 
         .experience {
             flex-grow: 1;
-            width: 190px;
+            width: 220px;
             text-align: center;
             color: $color7;
             font-weight: 250;
@@ -340,15 +354,29 @@ a {
 #contact {
     padding: 100px 10px;
 
-    #contact-inner {
-        #contact-inner-content {
-            width: 340px;
-            max-width: 100%;
-            padding: 20px;
+    .contact {
+        padding-top: 50px;
 
-            button {
-                width: 100%;
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .col {
+                flex: 0 0 50%;
+                max-width: 50%;
+                min-width: 300px;
+                padding: 0 10px;
+                text-align: right;
             }
+            input,
+            textarea{
+                margin-bottom: 20px;
+            }
+            textarea {
+                min-height: 164px;
+            }
+            
         }
     }
 }
@@ -358,7 +386,6 @@ button,
     padding: 10px 30px;
     margin: 0;
     font-family: $font-family-headings;
-    border-radius: $border-radius2;
     border: 0;
     font-size: 1em;
     cursor: pointer;
@@ -389,17 +416,21 @@ textarea {
     padding: 10px;
     margin: 0;
     width: 100%;
-    border-radius: $border-radius1;
-    border: 1px solid $color3;
+    border: 1px solid $color8;
     font-family: $font-family-default;
     resize: none;
-    margin-bottom: 10px;
     font-size: 1em;
+    color: $color4;
+
+    &::placeholder {
+        color: $color8;
+    }
+
+    &:focus {
+        border: 1px solid $color4;
+    }
 }
 
-textarea {
-    min-height: 200px;
-}
 
 .min-100vw {
     min-width: 100vw;
