@@ -233,7 +233,7 @@ a {
             max-width: 350px;
             background-color: $color3;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-            animation: fadeIn ease 1s;
+            cursor: default;
 
             .number {
                 color: $color7;
@@ -276,6 +276,8 @@ a {
             color: $color7;
             font-weight: 300;
             line-height: 1.8em;
+            cursor: default;
+
 
             &:hover {
                 .iconInShape {
@@ -338,7 +340,7 @@ a {
                 margin: 20px;
                 color: $color2;
                 transition: all 0.25s linear;
-                @include gradient-text();
+                @include gradient-text-stops(#ee0979, #ff6a00);
                 filter: grayscale(100%);
             }
 
