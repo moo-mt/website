@@ -4,9 +4,9 @@
   <div class="services">
     {% for service in site.data.services %}
     <div class="service">
-      <p>0{{forloop.index0 | plus: 1}}</p>
+      <div class="number">0{{forloop.index0 | plus: 1}}</div>
       <h3>{{service.name}}</h3>
-      <p class="description">{{service.description}}</p>
+      <div class="description">{{service.description}}</div>
     </div>
     {% endfor %}
   </div>

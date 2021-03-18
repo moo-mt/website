@@ -218,20 +218,30 @@ a {
             flex-grow: 1;
             text-align: left;
             margin: 20px;
-            padding: 40px;
+            padding: 50px;
             max-width: 350px;
             background-color: $color3;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
             animation: fadeIn ease 1s;
 
+            .number {
+                color: $color7;
+                font-weight: 300;
+                font-family: $font-family-default;
+            }
+
             h3 {
                 font-size: 18pt;
                 font-weight: bold;
+                margin: 15px 0;
+                font-family: $font-family-headings;
             }
 
-            .description{
+            .description {
                 color: $color7;
                 font-weight: 300;
+                line-height: 1.8em;
+                font-family: $font-family-default;
             }
         }
     }
@@ -254,22 +264,29 @@ a {
             max-width: 350px;
             color: $color7;
             font-weight: 300;
+            line-height: 1.8em;
 
             .iconInShape {
                 position: relative;
                 display: inline-block;
 
                 svg {
-                    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.1));
+                    path {
+                        fill: #e05fc4;
+                    }
                 }
 
                 .fas {
                     font-size: 30pt;
-                    @include gradient-text();
+                    //@include gradient-text();
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translateX(-50%) translateY(-50%);
+                    background: white;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
@@ -277,6 +294,34 @@ a {
 }
 
 #expertise {
+    background: $color3;
+    padding: 100px 10px;
+
+    .expertise {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 960px;
+        padding-top:50px;
+
+        .experience {
+            flex-grow: 1;
+            width:190px;
+            text-align: center;
+            color: $color7;
+            font-weight: 250;
+            line-height: 1.8em;
+            padding:40px 0;
+            text-transform: uppercase;
+
+
+            i{
+                font-size: 30pt;
+                @include gradient-text();
+                margin:20px;
+            }
+        }
+    }
 }
 
 #contact {
