@@ -5,11 +5,19 @@
     @include gradient-text-stops(#556fff, #556fff, #e05fc4, #f767a6, #ff798e);
 }
 
+@mixin gradient-button() {
+    @include gradient-button-stops(#556fff,#ff798e,#556fff);
+}
+
 @mixin gradient-text-stops($color-stops...) {
     background: linear-gradient(to right, $color-stops);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@mixin gradient-button-stops($color-stops...) {
+    background: linear-gradient(to right, $color-stops);
 }
 
 $cloudAnimationTime: 120s;
@@ -35,16 +43,6 @@ $border-radius1: 5px;
 
 $font-family-headings: "Poppins", cursive;
 $font-family-default: "Roboto", sans-serif;
-
-$button-light-background: $color1;
-$button-light-text: $color5;
-$button-light-background-hover: $color2;
-$button-light-text-hover: $color4;
-
-$button-dark-background: $color6;
-$button-dark-text: $color1;
-$button-dark-background-hover: $color4;
-$button-dark-text-hover: $color2;
 
 *,
 *:focus {
@@ -378,32 +376,24 @@ a {
 
 button,
 .button {
-    padding: 10px 30px;
     margin: 0;
     font-family: $font-family-headings;
     border: 0;
-    font-size: 1em;
     cursor: pointer;
+    color:$color1;   
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 12px 28px;
+    text-transform: uppercase;
 
-    &.light {
-        background: $button-light-background;
-        color: $button-light-text;
+    @include gradient-button();
+    background-size: 200% auto;
+    transition: all .3s cubic-bezier(.25,.8,.25,1);
 
-        &:hover {
-            background: $button-light-background-hover;
-            color: $button-light-text-hover;
-        }
-    }
+    &:hover{
+        background-position: right center;
+     }
 
-    &.dark {
-        background: $button-dark-background;
-        color: $button-dark-text;
-
-        &:hover {
-            background: $button-dark-background-hover;
-            color: $button-dark-text-hover;
-        }
-    }
 }
 
 input,
