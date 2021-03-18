@@ -12,6 +12,9 @@
     -webkit-text-fill-color: transparent;
 }
 
+$cloudAnimationTime: 120s;
+$cloudAnimationRepeat: 10;
+
 $color1: #ffffff;
 $color2: #a1a1a1;
 $color3: #f7f7f7;
@@ -85,13 +88,13 @@ a {
         background-position-x: 0%;
     }
     100% {
-        background-position-x: 200vw;
+        background-position-x: 100vw*$cloudAnimationRepeat;
     }
 }
 
 @keyframes animateCloudInverted {
     0% {
-        background-position-x: 200vw;
+        background-position-x: 100vw*$cloudAnimationRepeat;
     }
     100% {
         background-position-x: 0%;
@@ -117,7 +120,7 @@ a {
         background-position-x: 0;
         background-image: url('{{ "/images/hero/clouds.png" | relative_url }}');
         opacity: 0.5;
-        animation: animateCloud 480s linear infinite;
+        animation: animateCloud $cloudAnimationTime*2*$cloudAnimationRepeat linear infinite;
     }
 
     #home-background-inverted {
@@ -129,12 +132,12 @@ a {
         background-size: auto 100%;
         background-repeat: repeat-x;
         background-position: center center;
-        background-position-x: 200vw;
+        background-position-x: 100vw*$cloudAnimationRepeat;
         background-image: url('{{ "/images/hero/clouds.png" | relative_url }}');
         background-attachment: fixed;
         opacity: 1;
         transform: rotateX(-180deg) rotateY(-180deg);
-        animation: animateCloudInverted 240s linear infinite;
+        animation: animateCloudInverted $cloudAnimationTime*$cloudAnimationRepeat linear infinite;
     }
 
     #home-inner {
