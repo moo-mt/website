@@ -285,12 +285,6 @@ a {
                 position: relative;
                 display: inline-block;
 
-                svg {
-                    path {
-                        fill: #e05fc4;
-                    }
-                }
-
                 .fas {
                     font-size: 30pt;
                     //@include gradient-text();
