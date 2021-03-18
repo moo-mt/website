@@ -178,6 +178,7 @@ a {
 
             h1 {
                 font-size: 5vw;
+                text-transform: none;
 
                 strong {
                     @include gradient-text-stops(#ff6557, #ff367c);
