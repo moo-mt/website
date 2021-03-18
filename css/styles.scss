@@ -282,7 +282,8 @@ a {
             &:hover {
                 .iconInShape {
                     svg {
-                        filter: grayscale(0%);
+                    opacity: 1;
+                    filter: grayscale(0%);
                     }
                 }
             }
@@ -293,6 +294,7 @@ a {
 
                 svg {
                     transition: all 0.25s linear;
+                    opacity: 0.5;
                     filter: grayscale(100%);
                 }
 
@@ -342,6 +344,7 @@ a {
                 transition: all 0.25s linear;
                 @include gradient-text-stops(#ee0979, #ff6a00);
                 filter: grayscale(100%);
+                opacity: 0.5;
             }
 
             &:hover {
@@ -349,6 +352,7 @@ a {
 
                 i {
                     filter: grayscale(0%);
+                    opacity: 1;
                 }
             }
         }
