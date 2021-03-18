@@ -1,60 +1,40 @@
 - name: Application Services
   icon: file-code
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Artificial Intelligence
   icon: brain
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Automation
   icon: robot
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Distributed Agile
   icon: users
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Strategy
   icon: chess
-  description: Business and Software
 - name: Change Management
   icon: balance-scale-right
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Cloud
   icon: cloud
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Corporate IT
   icon: desktop
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Data & Analytics
   icon: database
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: DevOps
   icon: terminal
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Marketing
   icon: ad
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Infrastructure
   icon: server
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Networking
   icon: network-wired
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Security
   icon: shield-alt
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Sustainability
   icon: leaf
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Performance Analysis
   icon: tachometer-alt
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Quality Assurance
   icon: bug
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Architecture
   icon: project-diagram
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: UI/UX
   icon: paint-brush
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit consequat ultrices. Integer consequat lobortis diam, vitae bibendum elit imperdiet id. Nunc tempor nunc sed dolor ornare, sit amet sollicitudin velit ornare. Nam non urna a felis imperdiet tempor vulputate accumsan nulla. Etiam placerat sem at mi pellentesque, non fringilla mi porta. Mauris nibh ligula, dignissim vitae ligula non, ullamcorper porta nulla. Duis in ipsum mollis, malesuada risus a, mollis dolor. Sed vel enim nec massa elementum congue non eget metus.
 - name: Open Source
   icon: code-branch
-  description: tbd
