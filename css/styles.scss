@@ -237,7 +237,7 @@ a {
             transition: all 0.1s linear;
             cursor: default;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.05);
             }
 
@@ -394,6 +394,14 @@ a {
                 min-height: 184px;
             }
         }
+    }
+}
+
+footer {
+    background-color: #262b35;
+    padding: 50px 100px;
+    .logo {
+        width: 150px;
     }
 }
 
