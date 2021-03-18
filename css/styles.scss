@@ -278,14 +278,23 @@ a {
             line-height: 1.8em;
             cursor: default;
 
-
             &:hover {
+                h3 {
+                    filter: grayscale(0%);
+                }
+
                 .iconInShape {
                     svg {
-                    opacity: 1;
-                    filter: grayscale(0%);
+                        opacity: 1;
+                        filter: grayscale(0%);
                     }
                 }
+            }
+
+            h3 {
+                @include gradient-text-stops(#ee0979, #ff6a00);
+                transition: all 0.25s linear;
+                filter: grayscale(100%);
             }
 
             .iconInShape {
@@ -333,9 +342,11 @@ a {
             line-height: 1.8em;
             padding: 40px 0;
             text-transform: uppercase;
-            opacity: 0.7;
+            opacity: 0.5;
             transition: all 0.25s linear;
             cursor: default;
+            @include gradient-text-stops(#ee0979, #ff6a00);
+            filter: grayscale(100%);
 
             i {
                 font-size: 30pt;
@@ -349,6 +360,7 @@ a {
 
             &:hover {
                 opacity: 1;
+                filter: grayscale(0%);
 
                 i {
                     filter: grayscale(0%);
