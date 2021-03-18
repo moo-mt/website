@@ -4,9 +4,9 @@
 - name: FinTech
   icon: money-bill-wave
   description: We engineer innovative financial software systems that help investment banks, retail banks, insurance companies and wealth managers become more competitive, agile and flexible
-- name: Software and Platforms
+- name: Software & Platforms
   icon: code
-  description: Our experience with high-traffic systems has taught us how to build scalable and resilient systems using modern tech stacks and principles
+  description: Our experience with high-traffic systems has taught us how to build scalable, resilient and event-driven systems using modern tech stacks and architecture principles
 - name: Travel
   icon: plane-departure
   description: Over 10 years combined experience building software in the travel industry integrating with GDSes, Flight, Hotel and Car Hire providers
