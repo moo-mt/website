@@ -33,8 +33,11 @@ $color6: #232323;
 $color7: #828282;
 $color8: #dfdfdf;
 
-$sky-dark: rgb(31, 131, 219);
-$sky-light: rgb(54, 177, 235);
+$morning-sky-dark: rgb(31, 131, 219);
+$morning-sky-light: rgb(54, 177, 235);
+
+$night-sky-dark: rgb(0, 25, 48);
+$night-sky-light: rgb(0, 37, 54);
 
 $text-normal: $color4;
 $text-light: $color1;
@@ -123,9 +126,8 @@ a {
 #home {
     position: relative;
     height: 100%;
-    background: rgb(0, 64, 119);
-    background: linear-gradient(171deg, $sky-dark 0%, $sky-light 100%);
     color: $text-light;
+    transition: all 60s linear;
 
     #home-background {
         position: absolute;
@@ -199,21 +201,87 @@ a {
             h3 {
                 color: $color1;
                 line-height: 1em;
-                filter: drop-shadow(0px 0px 7px $sky-dark);
             }
         }
     }
-}
 
-#logo {
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-    padding: 30px;
+    #logo {
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        padding: 30px;
 
-    img {
-        width: 13vh;
-        filter: drop-shadow(0px 0px 20px $sky-dark);
+        img {
+            width: 13vh;
+        }
+    }
+
+    &.morning {
+        background: linear-gradient(171deg, $morning-sky-dark 0%, $morning-sky-light 100%);
+
+        #logo {
+            img {
+                filter: drop-shadow(0px 0px 20px $morning-sky-dark);
+            }
+        }
+
+        #home-background-moon{
+            display: none;
+        }
+
+        #home-inner {
+            #home-inner-content {
+                h1,
+                h2,
+                h3 {
+                    filter: drop-shadow(0px 0px 7px $morning-sky-dark);
+                }
+            }
+        }
+    }
+
+    &.night {
+        background: linear-gradient(171deg, $night-sky-dark 0%, $night-sky-light 100%);
+
+        #logo {
+            img {
+                filter: drop-shadow(0px 0px 20px $night-sky-dark);
+            }
+        }
+
+        #home-background {
+            opacity: 0.2;
+        }
+
+        #home-background-moon{
+            position: absolute;
+            height: 25vh;
+            width: 25vw;
+            top: 15vh;
+            right: 15vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('{{ "/images/hero/moon.png" | relative_url }}');
+        }
+
+        #home-background-inverted {
+            // opacity: 0.7;
+        }
+
+        #home-inner {
+            filter: grayscale(25%);
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.1), 
+                rgba(0, 0, 0, 0.2)
+              ), url('{{ "/images/hero/grass-and-cow.png" | relative_url }}');
+            #home-inner-content {
+                h1,
+                h2,
+                h3 {
+                    filter: drop-shadow(0px 0px 7px $night-sky-dark);
+                }
+            }
+        }
     }
 }
 

@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-{% include navigation.html %}
 
 <section id="home">
+    {% include navigation.html %}
+    <div id="home-background-moon"></div>
     <div id="home-background"></div>
     <div id="home-background-inverted"></div>
     <div id="home-inner" class="min-100vh flex-center-center">
@@ -15,4 +16,16 @@ layout: default
     </div>
 </section>
 
+<script>
+    var currentHour = new Date().getHours();
+    var hero = document.getElementById("home");
+
+    if (currentHour>6 && currentHour<19)
+        hero.classList.add("morning");
+    else
+        hero.classList.add("night");
+</script>
+
 {% include footer.html %}
+
+
