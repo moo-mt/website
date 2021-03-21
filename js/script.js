@@ -1,3 +1,8 @@
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  console.log(`'beforeinstallprompt' event was fired and popup blocked`);
+});
+
 new TypeIt("#heroTyper", {
   speed: 75,
   loop: true,
