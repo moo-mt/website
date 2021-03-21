@@ -9,6 +9,18 @@
     @include gradient-button-stops(#556fff, #ff798e, #556fff);
 }
 
+@mixin image-set-optimized-background-image($img) {
+    background-image: url($img + '.png');
+    background-image: -webkit-image-set(
+        url($img + '.webp') 1x,
+        url($img + '.png') 1x
+        );
+    background-image: image-set(
+        url($img + '.webp') 1x,
+        url($img + '.png') 1x
+        );  
+}
+
 @mixin gradient-text-stops($color-stops...) {
     background: linear-gradient(to right, $color-stops);
     background-clip: text;
@@ -170,7 +182,7 @@ a {
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: bottom center;
-        background-image: url('{{ "/images/hero/grass-and-cow.png" | relative_url }}');
+        @include image-set-optimized-background-image('{{ "/images/hero/grass-and-cow" | relative_url }}');
 
         #home-inner-content {
             width: 90%;
