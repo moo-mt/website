@@ -35,8 +35,8 @@
     <script src="https://kit.fontawesome.com/67d6b9b43b.js" crossorigin="anonymous"></script>
     <script src="{{ 'js/script.js' | relative_url }}?{{site.time | date: '%s' }}"></script>
 
+    {% include pwa-module.html %}
     {% if jekyll.environment == "production" %}
-        {% include pwa-module.html %}
         {% include analytics.html %}
     {% endif %}    
 </body>
