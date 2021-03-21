@@ -10,15 +10,9 @@
 }
 
 @mixin image-set-optimized-background-image($img) {
-    background-image: url($img + '.png');
-    background-image: -webkit-image-set(
-        url($img + '.webp') 1x,
-        url($img + '.png') 1x
-        );
-    background-image: image-set(
-        url($img + '.webp') 1x,
-        url($img + '.png') 1x
-        );  
+    background-image: url($img + ".png");
+    background-image: -webkit-image-set(url($img + ".webp") 1x, url($img + ".png") 1x);
+    background-image: image-set(url($img + ".webp") 1x, url($img + ".png") 1x);
 }
 
 @mixin gradient-text-stops($color-stops...) {
@@ -182,7 +176,19 @@ a {
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: bottom center;
-        @include image-set-optimized-background-image('{{ "/images/hero/grass-and-cow" | relative_url }}');
+        @include image-set-optimized-background-image('{{ "/images/hero/moo-hero-no-cows" | relative_url }}');
+
+        #cow {
+            position: absolute;
+            width: 30vw;
+            height: 30vw;
+            max-width: 1000px;
+            max-width: 1000px;
+            right: 10vw;
+            bottom: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
 
         #home-inner-content {
             width: 90%;
@@ -237,11 +243,16 @@ a {
             }
         }
 
-        #home-background-moon{
+        #home-background-moon {
             display: none;
         }
 
         #home-inner {
+
+            #cow {
+                background-image: url('{{ "/images/hero/awake-cow.png" | relative_url }}');
+            }
+
             #home-inner-content {
                 h1,
                 h2,
@@ -265,7 +276,7 @@ a {
             opacity: 0.2;
         }
 
-        #home-background-moon{
+        #home-background-moon {
             position: absolute;
             height: 25vh;
             width: 25vw;
@@ -282,10 +293,11 @@ a {
 
         #home-inner {
             filter: grayscale(25%);
-            background-image: linear-gradient(
-                rgba(0, 0, 0, 0.1), 
-                rgba(0, 0, 0, 0.2)
-              ), url('{{ "/images/hero/grass-and-cow.png" | relative_url }}');
+
+            #cow {
+                background-image: url('{{ "/images/hero/sleeping-cow.png" | relative_url }}');
+            }
+
             #home-inner-content {
                 h1,
                 h2,
