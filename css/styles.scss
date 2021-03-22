@@ -248,7 +248,6 @@ a {
         }
 
         #home-inner {
-
             #cow {
                 background-image: url('{{ "/images/hero/awake-cow.png" | relative_url }}');
             }
@@ -496,9 +495,31 @@ a {
 
 footer {
     background-color: #262b35;
-    padding: 50px 100px;
-    .logo {
-        width: 150px;
+    padding: 40px 100px;
+    overflow: hidden;
+
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        > div {
+            flex-grow: 1;
+
+            &:nth-child(2) {
+                text-align: center;
+            }
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+        .logo {
+            width: 150px;
+            float: left;
+        }
     }
 }
 
