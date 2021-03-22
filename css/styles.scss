@@ -331,6 +331,10 @@ a {
 
             &:hover {
                 transform: scale(1.05);
+
+                h3{
+                    @include gradient-text-stops(#ee0979, #ff6a00);
+                }
             }
 
             .number {
