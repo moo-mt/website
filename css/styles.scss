@@ -517,11 +517,16 @@ footer {
 
             &:last-child {
                 text-align: right;
+
+                & a:visited, & a:link{
+                    color: #fff;
+                    padding: 5px;
+                }
             }
         }
 
         .logo {
-            width: 150px;
+            width: 100px;
         }
     }
 }
