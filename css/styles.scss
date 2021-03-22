@@ -42,8 +42,8 @@ $color8: #dfdfdf;
 $morning-sky-dark: rgb(31, 131, 219);
 $morning-sky-light: rgb(54, 177, 235);
 
-$night-sky-dark: rgb(0, 25, 48);
-$night-sky-light: rgb(0, 37, 54);
+$night-sky-dark: #000e1b;
+$night-sky-light: #000f17;
 
 $text-normal: $color4;
 $text-light: $color1;
@@ -243,7 +243,7 @@ a {
             }
         }
 
-        #home-background-moon {
+        #home-background-moon, #home-background-stars {
             display: none;
         }
 
@@ -284,6 +284,15 @@ a {
             background-size: contain;
             background-repeat: no-repeat;
             background-image: url('{{ "/images/hero/moon.png" | relative_url }}');
+        }
+
+        #home-background-stars {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(transparent, $night-sky-light 100%), url('{{ "/images/hero/stars.png" | relative_url }}');
         }
 
         #home-background-inverted {
