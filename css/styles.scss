@@ -440,7 +440,7 @@ a {
 
         .experience {
             flex-grow: 1;
-            width: 175px;
+            width: 220px;
             text-align: center;
             color: $color7;
             font-weight: 250;
@@ -635,10 +635,14 @@ textarea {
         }
     }
 
-    #expertise .expertise .experience.highlighted {
+    #expertise .expertise .experience{
+        width: 175px;
+
+        &.highlighted {
         opacity: 1;
         filter: grayscale(0%);
     }
+}
 
     footer {
         .inner {
