@@ -5,7 +5,7 @@
     <div id="home-background"></div>
     <div id="home-background-inverted"></div>
     <div id="home-inner" class="min-100vh flex-center-center">
-        <div id="cow"></div>
+        <div id="cow" onclick="wakeCow()"></div>
         <div id="home-inner-content">
             <h1>We provide</h1>
             <h1 id="heroTyper"></h1>
@@ -18,8 +18,19 @@
     var currentHour = new Date().getHours();
     var hero = document.getElementById("home");
 
-    if (currentHour>6 && currentHour<19)
+    if (currentHour > 6 && currentHour < 19)
         hero.classList.add("morning");
     else
         hero.classList.add("night");
+
+    let cowClicked = 0;
+
+    function wakeCow() {
+        cowClicked++;
+
+        if (cowClicked == 3) {
+            hero.classList.add("morning");
+            hero.classList.remove("night");
+        }
+    }
 </script>
