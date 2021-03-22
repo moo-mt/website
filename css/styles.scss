@@ -332,8 +332,8 @@ a {
             &:hover {
                 transform: scale(1.05);
 
-                h3{
-                    @include gradient-text-stops(#ee0979, #ff6a00);
+                h3 {
+                    filter: grayscale(0);
                 }
             }
 
@@ -348,6 +348,9 @@ a {
                 font-weight: bold;
                 margin: 15px 0;
                 font-family: $font-family-headings;
+                @include gradient-text-stops(#ee0979, #ff6a00);
+                transition: all 0.1s linear;
+                filter: grayscale(1);
             }
 
             .description {
@@ -510,7 +513,7 @@ footer {
 
         > div {
             flex-grow: 1;
-            
+
             &:nth-child(1) {
                 text-align: left;
             }
@@ -522,7 +525,8 @@ footer {
             &:last-child {
                 text-align: right;
 
-                & a:visited, & a:link{
+                & a:visited,
+                & a:link {
                     color: #fff;
                     padding: 5px;
                     font-size: 13pt;
