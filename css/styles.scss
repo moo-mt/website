@@ -326,7 +326,7 @@ a {
             max-width: 350px;
             background-color: $color3;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-            transition: all 0.1s linear;
+            transition: all 0.5s linear;
             cursor: default;
 
             &:hover {
@@ -349,7 +349,7 @@ a {
                 margin: 15px 0;
                 font-family: $font-family-headings;
                 @include gradient-text-stops(#ee0979, #ff6a00);
-                transition: all 0.1s linear;
+                transition: all 0.5s linear;
                 filter: grayscale(1);
             }
 
@@ -554,7 +554,7 @@ button,
 
     @include gradient-button();
     background-size: 200% auto;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 
     &:hover {
         background-position: right center;
