@@ -329,14 +329,6 @@ a {
             transition: all 0.1s linear;
             cursor: default;
 
-            &.highlighted {
-                transform: scale(1.05);
-
-                h3 {
-                    filter: grayscale(0);
-                }
-            }
-
             &:hover {
                 transform: scale(1.05);
 
@@ -391,7 +383,7 @@ a {
             line-height: 1.8em;
             cursor: default;
 
-            &.highlighted {
+            &:hover {
                 h3 {
                     filter: grayscale(0%);
                 }
@@ -467,7 +459,7 @@ a {
                 @include gradient-text-stops(#ee0979, #ff6a00);
             }
 
-            &.highlighted {
+            &:hover {
                 opacity: 1;
                 filter: grayscale(0%);
             }
@@ -629,7 +621,25 @@ textarea {
             filter: grayscale(0);
         }
     }
-    
+
+    #industries .industries .industry.highlighted {
+        h3 {
+            filter: grayscale(0%);
+        }
+
+        .iconInShape {
+            svg {
+                opacity: 1;
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+    #expertise .expertise .experience.highlighted {
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+
     footer {
         .inner {
             > div {
