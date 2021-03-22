@@ -444,13 +444,13 @@ a {
             opacity: 0.5;
             transition: all 0.25s linear;
             cursor: default;
-            @include gradient-text-stops(#ee0979, #ff6a00);
             filter: grayscale(100%);
 
             i {
                 font-size: 30pt;
                 margin: 20px;
                 color: $color2;
+                @include gradient-text-stops(#ee0979, #ff6a00);
             }
 
             &:hover {
