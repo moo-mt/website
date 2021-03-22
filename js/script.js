@@ -36,3 +36,7 @@ document.querySelectorAll('.industry').forEach(target => {
 document.querySelectorAll('.experience').forEach(target => {
   observer.observe(target);
 });
+
+document.querySelectorAll('.service').forEach(target => {
+  observer.observe(target);
+});

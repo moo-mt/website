@@ -329,6 +329,14 @@ a {
             transition: all 0.1s linear;
             cursor: default;
 
+            &.highlighted {
+                transform: scale(1.05);
+
+                h3 {
+                    filter: grayscale(0);
+                }
+            }
+
             &:hover {
                 transform: scale(1.05);
 
@@ -383,11 +391,11 @@ a {
             line-height: 1.8em;
             cursor: default;
 
-            &.highlighted{
+            &.highlighted {
                 h3 {
                     filter: grayscale(0%);
                 }
-        
+
                 .iconInShape {
                     svg {
                         opacity: 1;
@@ -459,7 +467,7 @@ a {
                 @include gradient-text-stops(#ee0979, #ff6a00);
             }
 
-            &.highlighted{
+            &.highlighted {
                 opacity: 1;
                 filter: grayscale(0%);
             }
@@ -614,6 +622,14 @@ textarea {
 }
 
 @media (max-width: 768px) {
+    #services .services .service.highlighted {
+        transform: scale(1.05);
+
+        h3 {
+            filter: grayscale(0);
+        }
+    }
+    
     footer {
         .inner {
             > div {
