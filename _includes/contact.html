@@ -1,20 +1,25 @@
 <section id="contact" class="flex-center-center">
-    <h2>Get in touch</h1>
+  <h2>Get in touch</h1>
 
     <div class="contact inner-limit">
+      <div id="formContent">
         <form name="submit-to-google-sheet">
           <div class="form">
             <div class="col">
-                <input name="name" type="text" placeholder="Your Name" required aria-label="Name" />
-                <input name="email" type="email" placeholder="Your Email" required aria-label="Email" />
-                <input name="phone" type="tel" placeholder="Your Mobile" required aria-label="Mobile" />     
+              <input name="name" type="text" placeholder="Your Name" required aria-label="Name" />
+              <input name="email" type="email" placeholder="Your Email" required aria-label="Email" />
+              <input name="phone" type="tel" placeholder="Your Mobile" required aria-label="Mobile" />
             </div>
-            <div class="col">        
-                <textarea name="message" placeholder="Your message" required aria-label="Message"></textarea>
-                <button type="submit" aria-label="Send">Send Message</button>
-          </div>
+            <div class="col">
+              <textarea name="message" placeholder="Your message" required aria-label="Message"></textarea>
+              <button type="submit" aria-label="Send">Send Message</button>
+            </div>
           </div>
         </form>
+      </div>
+      <div id="formSubmitted">
+        <h3>Your message has been sent!</h3>
+      </div>
     </div>
 
 </section>
@@ -40,7 +45,11 @@
       },
       body: payload
     })
-      .then((response) => console.log("Success!", response))
-      .catch((error) => console.error("Error!", error.message));
+      .then((response) => {
+        console.log("Message Sent", response);
+        document.getElementById("formContent").style.display = "none";
+        document.getElementById("formSubmitted").style.display = "inline-block";
+      })
+      .catch((error) => console.error("Message not sent", error.message));
   });
 </script>
