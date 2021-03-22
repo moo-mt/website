@@ -26,7 +26,7 @@ let callback = (entries, observer) => {
 };
 
 let observer = new IntersectionObserver(callback, {
-  threshold: 1.0
+  threshold: 0.75
 });
 
 document.querySelectorAll('.industry').forEach(target => {
