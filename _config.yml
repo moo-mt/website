@@ -4,6 +4,6 @@ url: https://moo.mt
 email: info@moo.mt
 exclude: [".jekyll-cache", ".github", "Gemfile*", ".gitignore", ".git", "README.md", ".kodiak.toml", ".nojekyll", "LICENSE"]
 ver: 0.0.0-local
-google_analytics: G-5T4XML72GE
+google_analytics: G-VB25BQCDFK
 livereload: true
 theme-color: "#349261"
