@@ -49,7 +49,14 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site
         cname: moo.mt
-        
+
+    - name: Purge Cloudflare cache
+      run: |
+        curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONEID }}/purge_cache" \
+        -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" \
+        -H "Content-Type: application/json" \
+        --data '{"purge_everything":true}'
+
     - name: Zip Release
       run: |
         zip -r site.zip _site/*
