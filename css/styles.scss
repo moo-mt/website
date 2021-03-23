@@ -322,6 +322,7 @@ a {
 
             #cow {
                 background-image: url('{{ "/images/hero/sleeping-cow.png" | relative_url }}');
+                cursor: pointer;
             }
 
             #home-inner-content {
@@ -331,6 +332,12 @@ a {
                     filter: drop-shadow(0px 0px 7px $night-sky-dark);
                 }
             }
+        }
+
+        &.woken #home-inner #cow {
+            background-image: url('{{ "/images/hero/woken-cow.png" | relative_url }}');
+            bottom: 50px;
+            cursor: default;
         }
     }
 }
