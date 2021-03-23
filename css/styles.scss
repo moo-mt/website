@@ -394,7 +394,8 @@ a {
     padding: 150px 15px;
     background-size: cover;
     background-image: url('{{ "/images/malta.jpg" | relative_url }}');
-    background-position: center center;
+    background-position-x: 30%;
+    background-position-y: center;
     position: relative;
 
     .overlay {
@@ -542,6 +543,7 @@ a {
 
     h3 {
         color: #fff;
+        opacity: 0.8;
     }
 }
 
