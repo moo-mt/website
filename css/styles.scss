@@ -505,7 +505,6 @@ a {
         padding-top: 50px;
 
         .experience {
-            flex-grow: 1;
             width: 220px;
             text-align: center;
             color: $color7;
@@ -742,7 +741,7 @@ textarea {
     }
 
     #expertise .expertise .experience {
-        width: 175px;
+        width: 170px;
 
         &.highlighted {
             opacity: 1;
