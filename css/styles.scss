@@ -393,7 +393,7 @@ a {
     background: $color6;
     padding: 150px 15px;
     background-size: cover;
-    background-image: url("https://media.istockphoto.com/photos/view-of-marsamxett-harbour-and-valletta-picture-id493111476");
+    background-image: url('{{ "/images/malta.jpg" | relative_url }}');
     background-position: center center;
     position: relative;
 
@@ -402,7 +402,7 @@ a {
         position: absolute;
         height: 100%;
         width: 100%;
-        opacity: 0.6;
+        opacity: 0.4;
         top: 0;
         left: 0;
     }
