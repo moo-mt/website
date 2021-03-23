@@ -105,9 +105,10 @@ h2.heading {
     letter-spacing: -1px;
     font-size: 30pt;
     font-weight: 600;
+    line-height: 3.4rem;
 }
 
-h3.heading{
+h3.heading {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -388,9 +389,48 @@ a {
     }
 }
 
+#location {
+    background: $color6;
+    padding: 150px 15px;
+    background-size: cover;
+    background: url("https://lithohtml.themezaa.com/images/home-business-parallax-bg.jpg");
+    background-position: center center;
+    position: relative;
+
+    .overlay {
+        background-color: #1f232c;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+    }
+
+    .container {
+        z-index: 9;
+    }
+    h2,
+    h3 {
+        color: $color1;
+    }
+
+    h2 {
+        line-height: 1.2em;
+    }
+
+    h3 {
+        margin-top: 40px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.7;
+    }
+}
+
 #industries {
     background: $color1;
-    padding: 100px 10px;
+    padding: 100px 15px;
 
     .industries {
         display: flex;
@@ -455,8 +495,21 @@ a {
 
 #expertise {
     background: $color3;
-    padding: 100px 10px;
+    padding: 150px 15px 100px 15px;
+    position: relative;
 
+    #time{
+        background-color: #ff7a56;        
+        border-radius: 6px;
+        position: absolute;
+        top:0;
+        transform: translateY(-50%);
+        padding:30px;
+        margin:0 10px;
+        width:1170px;
+        max-width: 90%;
+    }
+    
     .expertise {
         display: flex;
         flex-wrap: wrap;
@@ -493,7 +546,7 @@ a {
 }
 
 #contact {
-    padding: 100px 10px;
+    padding: 100px 15px;
 
     #formSubmitted {
         display: none;
@@ -527,7 +580,7 @@ a {
 
 footer {
     background-color: #1f232c;
-    padding: 120px 100px;
+    padding: 120px 15px;
     overflow: hidden;
     text-align: center;
     color: $color9;
@@ -545,7 +598,6 @@ footer {
             margin: 0 30px;
             font-size: 20pt;
         }
-        
     }
 
     .text {
@@ -560,17 +612,14 @@ footer {
             a,
             a.gradient:visited,
             a.gradient:link {
-                font-weight: 600;         
-                letter-spacing: -0.5px;   
+                font-weight: 600;
+                letter-spacing: -0.5px;
                 @include gradient-text();
             }
-            
         }
-
-        
     }
 
-    .footnote{
+    .footnote {
         font-size: 13px;
     }
 
@@ -683,6 +732,19 @@ textarea {
             filter: grayscale(0%);
         }
     }
+    #expertise {
+       padding: 50px 15px 100px 15px;
+
+    #time{
+        position: relative;
+        top:0;
+        transform: none;
+        padding:30px;
+        margin:0 10px 50px 10px;
+        width:100%;
+        max-width: 100%;
+    }
+}
 }
 
 @media (max-width: 480px) {
