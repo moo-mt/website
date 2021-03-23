@@ -536,28 +536,13 @@ a {
     background-image: linear-gradient(to right top, #f5bb8d, #feb399, #ffaea8, #fdaab9, #f3aaca);
     padding: 100px 15px;
 
-    .inner-limit {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0 auto;
-
-        > div {
-            flex: 0 0 50%;
-            max-width: 50%;
-            min-width: 300px;
-            padding: 0 10px;
-            text-align: left;
-        }
+    h2{
+        font-size: 33pt;
     }
 
-    .page-title-separator-line {
-        width: 70px;
-        height: 1px;
-        background: #000;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 20px;
+    span {
+        color: #fff;
+        font-size: 14pt;
     }
 }
 
