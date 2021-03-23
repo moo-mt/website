@@ -39,6 +39,8 @@ $color6: #232323;
 $color7: #828282;
 $color8: #dfdfdf;
 
+$transition-default: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
 $morning-sky-dark: rgb(31, 131, 219);
 $morning-sky-light: rgb(54, 177, 235);
 
@@ -335,7 +337,7 @@ a {
             max-width: 350px;
             background-color: $color3;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-            transition: all 0.5s linear;
+            transition: $transition-default;
             cursor: default;
 
             &:hover {
@@ -358,7 +360,7 @@ a {
                 margin: 15px 0;
                 font-family: $font-family-headings;
                 @include gradient-text-stops(#ee0979, #ff6a00);
-                transition: all 0.5s linear;
+                transition: $transition-default;
                 filter: grayscale(1);
             }
 
@@ -407,7 +409,7 @@ a {
 
             h3 {
                 @include gradient-text-stops(#ee0979, #ff6a00);
-                transition: all 0.5s linear;
+                transition: $transition-default;
                 filter: grayscale(100%);
             }
 
@@ -416,7 +418,7 @@ a {
                 display: inline-block;
 
                 svg {
-                    transition: all 0.5s linear;
+                    transition: $transition-default;
                     opacity: 0.5;
                     filter: grayscale(100%);
                 }
@@ -457,7 +459,7 @@ a {
             padding: 40px 0;
             text-transform: uppercase;
             opacity: 0.5;
-            transition: all 0.5s linear;
+            transition: $transition-default;
             cursor: default;
             filter: grayscale(100%);
 
@@ -563,7 +565,7 @@ button,
 
     @include gradient-button();
     background-size: 200% auto;
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: $transition-default;
 
     &:hover {
         background-position: right center;
