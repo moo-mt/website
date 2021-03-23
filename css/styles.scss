@@ -393,7 +393,7 @@ a {
     background: $color6;
     padding: 150px 15px;
     background-size: cover;
-    background: url("https://lithohtml.themezaa.com/images/home-business-parallax-bg.jpg");
+    background-image: url("https://media.istockphoto.com/photos/view-of-marsamxett-harbour-and-valletta-picture-id493111476");
     background-position: center center;
     position: relative;
 
@@ -495,21 +495,9 @@ a {
 
 #expertise {
     background: $color3;
-    padding: 150px 15px 100px 15px;
+    padding: 100px 15px;
     position: relative;
 
-    #time{
-        background-color: #ff7a56;        
-        border-radius: 6px;
-        position: absolute;
-        top:0;
-        transform: translateY(-50%);
-        padding:30px;
-        margin:0 10px;
-        width:1170px;
-        max-width: 90%;
-    }
-    
     .expertise {
         display: flex;
         flex-wrap: wrap;
@@ -542,6 +530,35 @@ a {
                 filter: grayscale(0%);
             }
         }
+    }
+}
+
+#contactText {
+    background-image: linear-gradient(to right top, #f5bb8d, #feb399, #ffaea8, #fdaab9, #f3aaca);
+    padding: 100px 15px;
+
+    .inner-limit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+
+        > div {
+            flex: 0 0 50%;
+            max-width: 50%;
+            min-width: 300px;
+            padding: 0 10px;
+            text-align: left;
+        }
+    }
+
+    .page-title-separator-line {
+        width: 70px;
+        height: 1px;
+        background: #000;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
     }
 }
 
@@ -732,19 +749,6 @@ textarea {
             filter: grayscale(0%);
         }
     }
-    #expertise {
-       padding: 50px 15px 100px 15px;
-
-    #time{
-        position: relative;
-        top:0;
-        transform: none;
-        padding:30px;
-        margin:0 10px 50px 10px;
-        width:100%;
-        max-width: 100%;
-    }
-}
 }
 
 @media (max-width: 480px) {
