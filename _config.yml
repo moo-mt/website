@@ -6,5 +6,5 @@ exclude: [".jekyll-cache", ".bundle", ".github", "Gemfile*", ".gitignore", "GitV
 ver: 0.0.0-local
 google_analytics: G-VB25BQCDFK
 livereload: true
-theme-color: "#a2d2ff"
+theme-color: "#F7F7F7"
 host: 0.0.0.0
