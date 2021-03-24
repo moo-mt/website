@@ -5,7 +5,7 @@
 - name: Audit
   description: We have been at both ends of audits. Our industry certified auditors work with you to audit your organization or to help your company prepare for Software, Infrastructure, Architecture or Security audits.
 - name: Recruit
-  description: We work with companies that want to venture into areas where they have no experience. Our skilled consultants can interview your candidates and give recommendations depending on your vision or project.
+  description: We guide companies that need to venture into areas where they have no in-house expertise. Our skilled consultants can interview your candidates and give recommendations depending on your vision or project.
 - name: Secure
   description: We build security-first cultures. Our security architects work with organizations to help them build and implement security policies, starting from their corporate networks to their production networks and applications.
 - name: Research
@@ -15,4 +15,4 @@
 - name: Innovate
   description: We understand that innovation can be difficult. Sometimes you need to introduce fresh ideas from external talent. We work with organizations and run innovation and brainstorming sessions to challenge your norms.
 - name: Build
-  description: We transform your ideas into code. Develop new applications or re-engineer your core legacy systems with technological innovation that boosts performance, agility, scalability and UX.
+  description: We transform your ideas into code. Do you want to develop new applications or re-engineer your core, legacy systems with technological innovations that boost performance, agility, scalability and improve UX. We'll help you get there.
