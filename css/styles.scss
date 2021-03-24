@@ -595,6 +595,11 @@ footer {
     text-align: center;
     color: $color9;
 
+    a:visited,
+    a:link {
+        color: #fff;
+    }
+
     .social,
     .text,
     .footnote {
@@ -604,7 +609,6 @@ footer {
     .social {
         a:visited,
         a:link {
-            color: #fff;
             margin: 0 30px;
             font-size: 20pt;
         }
