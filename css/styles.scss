@@ -545,7 +545,7 @@ a {
     background-image: linear-gradient(to right top, #f5bb8d, #feb399, #ffaea8, #fdaab9, #f3aaca);
     padding: 100px 15px;
 
-    h2{
+    h2 {
         font-size: 33pt;
     }
 
@@ -718,6 +718,14 @@ textarea {
 }
 
 @media (max-width: 768px) {
+    #home #home-inner #home-inner-content {
+        padding: 30vh 0 0 0;
+
+        h1 {
+            font-size: 8vw;
+        }
+    }
+
     #services .services .service.highlighted {
         transform: scale(1.05);
 
@@ -745,6 +753,16 @@ textarea {
         &.highlighted {
             opacity: 1;
             filter: grayscale(0%);
+        }
+    }
+}
+
+@media (max-width: 768px) and (max-height: 560px){
+    #home #home-inner #home-inner-content {
+        padding: 0;
+
+        h1 {
+            font-size: 8vw;
         }
     }
 }
