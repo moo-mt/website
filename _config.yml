@@ -1,5 +1,5 @@
 title: moo - The tech consultants
-description: moo is a tech consultancy company that aims to solve tough problems with technology. We help our clients achieve technical excellence, strengthen their core technologies, scale with flexibility and create seamless digital experiences.
+description: moo is a tech consultancy company that aims to solve tough problems with technology. We advise, train, audit and research for companies all over the world
 url: https://moo.mt
 email: info@moo.mt
 exclude: [".jekyll-cache", ".bundle", ".github", "Gemfile*", ".gitignore", "GitVersion.yml", ".git", "README.md", ".kodiak.toml", ".nojekyll", "LICENSE"]
