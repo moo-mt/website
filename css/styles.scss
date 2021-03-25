@@ -1,12 +1,18 @@
 ---
 ---
 
+$gradient1: #5cc088, #50c28d, #83b879, #c9a95e, #dda556;
+$gradient2: #5cc088, #e7a965, #5cc088;
+$gradient3: #5cc088, #dda556;
+$gradient4: #5cc088, #50c28d, #83b879, #c9a95e, #dda556;
+$gradient5: #5cc087, #50c28dd0, #84b879ad, #c9a95ed0, #dda556;
+
 @mixin gradient-text {
-    @include gradient-text-stops(#556fff, #556fff, #e05fc4, #f767a6, #ff798e);
+    @include gradient-text-stops($gradient1);
 }
 
 @mixin gradient-button() {
-    @include gradient-button-stops(#556fff, #ff798e, #556fff);
+    @include gradient-button-stops($gradient2);
 }
 
 @mixin image-set-optimized-background-image($img) {
@@ -214,9 +220,13 @@ a {
             h1 {
                 font-size: 5vw;
                 text-transform: none;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-color: #fff;
+                -webkit-text-stroke-width: 2px;
 
                 strong {
-                    @include gradient-text-stops(#ff6557, #ff367c);
+                    -webkit-text-fill-color: #fff;
+                    -webkit-text-stroke-width: 0;
                     font-weight: bolder;
                 }
             }
@@ -381,7 +391,7 @@ a {
                 font-weight: bold;
                 margin: 15px 0;
                 font-family: $font-family-headings;
-                @include gradient-text-stops(#ee0979, #ff6a00);
+                @include gradient-text-stops($gradient3);
                 transition: $transition-default;
                 filter: grayscale(1);
             }
@@ -469,7 +479,7 @@ a {
             }
 
             h3 {
-                @include gradient-text-stops(#ee0979, #ff6a00);
+                @include gradient-text-stops($gradient3);
                 transition: $transition-default;
                 filter: grayscale(100%);
             }
@@ -527,7 +537,7 @@ a {
                 font-size: 30pt;
                 margin: 20px;
                 color: $color2;
-                @include gradient-text-stops(#ee0979, #ff6a00);
+                @include gradient-text-stops($gradient3);
             }
 
             &:hover {
@@ -546,14 +556,14 @@ a {
         a {
             display: inline-block;
             padding: 40px;
-    
+
             img {
                 height: 50px;
                 opacity: 0.8;
                 filter: grayscale(1);
                 transition: $transition-default;
             }
-    
+
             &:hover {
                 img {
                     opacity: 1;
@@ -565,16 +575,22 @@ a {
 }
 
 #contactText {
-    background-image: linear-gradient(to right top, #f5bb8d, #feb399, #ffaea8, #fdaab9, #f3aaca);
+    background-image: linear-gradient(to right, $gradient5),
+        url(https://lithohtml.themezaa.com/images/home-business-parallax-bg.jpg);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    overflow: hidden;
+    position: relative;
+    background-position: center center !important;
     padding: 100px 15px;
 
     h2 {
+        color: #fff;
         font-size: 33pt;
     }
 
     h3 {
         color: #fff;
-        opacity: 0.8;
     }
 }
 
@@ -662,6 +678,7 @@ footer {
 
     .logo {
         width: 100px;
+        margin:15px 0 0 0;
         aspect-ratio: 3324 / 957;
     }
 }
@@ -746,6 +763,7 @@ textarea {
 
         h1 {
             font-size: 8vw;
+            -webkit-text-stroke-width: 1px;
         }
     }
 
