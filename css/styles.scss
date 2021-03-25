@@ -21,7 +21,7 @@ $gradient4: #5cc087, #94c2509f, #75e649bd, #36b7dba2, #0082ed;
 }
 
 @mixin gradient-text-stops($color-stops...) {
-    background: linear-gradient(to right, $color-stops);
+    background: linear-gradient(45deg, $color-stops);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -29,7 +29,7 @@ $gradient4: #5cc087, #94c2509f, #75e649bd, #36b7dba2, #0082ed;
 }
 
 @mixin gradient-button-stops($color-stops...) {
-    background: linear-gradient(to right, $color-stops);
+    background: linear-gradient(45deg, $color-stops);
 }
 
 $cloudAnimationTime: 120s;
