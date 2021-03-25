@@ -90,7 +90,7 @@ a { text-decoration: none; }
 
 #services .services .service .number { color: #828282; font-weight: 300; font-family: "Roboto", sans-serif; }
 
-#services .services .service h3 { font-size: 18pt; font-weight: bold; margin: 15px 0; font-family: "Poppins", cursive; background: linear-gradient(45deg, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); filter: grayscale(1); }
+#services .services .service h3 { font-size: 18pt; font-weight: bold; margin: 15px 0; font-family: "Poppins", cursive; background: linear-gradient(45deg, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; display: inline-block; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); filter: grayscale(1); }
 
 #services .services .service .description { color: #828282; font-weight: 300; line-height: 1.8em; font-family: "Roboto", sans-serif; }
 
@@ -116,9 +116,9 @@ a { text-decoration: none; }
 
 #industries .industries .industry:hover .iconInShape svg { opacity: 1; filter: grayscale(0%); }
 
-#industries .industries .industry h3 { background: linear-gradient(45deg, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); filter: grayscale(100%); }
+#industries .industries .industry h3 { background: linear-gradient(45deg, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); filter: grayscale(100%); display: inline-block; }
 
-#industries .industries .industry .iconInShape { position: relative; display: inline-block; }
+#industries .industries .industry .iconInShape { position: relative; }
 
 #industries .industries .industry .iconInShape svg { transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); opacity: 0.5; filter: grayscale(100%); }
 

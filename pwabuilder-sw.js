@@ -7,6 +7,11 @@ self.addEventListener("message", (event) => {
 });
 
 workbox.routing.registerRoute(
+  new RegExp(/.*(facebook\.(com|net)|googletagmanager\.com).*/),
+  new workbox.strategies.NetworkOnly()
+);
+
+workbox.routing.registerRoute(
   new RegExp(/.*\/images.*/),
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: "localImages-StaleWhileRevalidate"
@@ -48,6 +53,11 @@ workbox.routing.registerRoute(
   })
 );
 
-workbox.routing.setDefaultHandler(new workbox.strategies.NetworkFirst({
-  cacheName: "default-NetworkFirst"
-}));
+workbox.routing.registerRoute(
+  new RegExp(/./),
+  new workbox.strategies.NetworkFirst({
+    cacheName: "default-NetworkFirst"
+  })
+);
+
+
