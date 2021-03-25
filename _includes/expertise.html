@@ -1,0 +1,14 @@
+<section id="expertise" class="flex-center-center">
+    <h2 class="heading">What we know</h2>
+    <h3 class="heading gradient">Our Expertise</h3>
+
+  <div class="expertise inner-limit">
+    {% assign expertise = site.data.expertise | sort: "name" %}
+    {% for experience in expertise %}
+    <div class="experience">
+      <i class="fas fa-{{experience.icon}}"></i>
+      <h4>{{experience.name}}</h4>
+    </div>
+    {% endfor %}
+  </div>
+</section>

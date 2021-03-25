@@ -1,0 +1,25 @@
+<section id="industries" class="flex-center-center">
+  <div class="industries inner-limit">
+    {% for industry in site.data.industries %}
+    <div class="industry">
+      <div class="iconInShape">
+        <svg width="100" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#5cc088" />
+              <stop offset="100%" stop-color="#0084ed" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad)"
+            d="M86.2,51.4C58.6,97.5,-53.4,96.5,-81.8,49.9C-110.3,3.3,-55.1,-88.8,0.9,-88.3C56.9,-87.8,113.7,5.3,86.2,51.4Z">
+          </path>
+        </svg>
+        <i class="fas fa-{{industry.icon}}"></i>
+      </div>
+      <h3>{{industry.name}}</h3>
+      <p>{{industry.description}}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+

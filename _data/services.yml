@@ -1,0 +1,18 @@
+- name: Consult
+  description: We are well positioned to help drive change because of our team's variety of cross-industry perspectives, independence and broad experience developing and deploying leading-edge technologies and products.
+- name: Train
+  description: We help develop companies' technology workforce, making their teams know more and work better together. We build bespoke training material and sessions so that teams develop the skills of tomorrow.
+- name: Audit
+  description: We have been at both ends of audits. Our industry certified auditors work with you to audit your organization or to help your company prepare for Software, Infrastructure, Architecture or Security audits.
+- name: Recruit
+  description: We guide companies that need to venture into areas where they have no in-house expertise. Our skilled consultants can interview your candidates and give recommendations depending on your vision or project.
+- name: Secure
+  description: We build security-first cultures. Our security architects work with organizations to help them build and implement security policies, starting from their corporate networks to their production networks and applications.
+- name: Research
+  description: We equip organizations with unmatched insights and data-driven, independent and objective research gathered by our experienced advisors; personalized to the organization's use case, whatever it may be.
+- name: Outsource
+  description: We have good relationships with a variety of reputable tech outsourcing companies. Depending on your needs we can bridge the gap between your organization and the outsourced teams to maximize business performance and cut operating costs.
+- name: Innovate
+  description: We understand that innovation can be difficult. Sometimes you need to introduce fresh ideas from external talent. We work with organizations and run innovation and brainstorming sessions to challenge your norms.
+- name: Build
+  description: We transform your ideas into code. Do you want to develop new applications or re-engineer your core, legacy systems with technological innovations that boost performance, agility, scalability and improve UX. We'll help you get there.

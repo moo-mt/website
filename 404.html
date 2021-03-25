@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<section id="home">
+    {% include navigation.html %}
+    <div id="home-background-stars"></div>
+    <div id="home-background-moon"></div>
+    <div id="home-background"></div>
+    <div id="home-background-inverted"></div>
+    <div id="home-inner" class="min-100vh flex-center-center">
+        <div id="cow" onclick="wakeCow()"></div>
+        <div id="home-inner-content">
+            <h1>Ooops!</h1>
+            <h1><strong>I think you're lost</strong></h1>
+            <h3>404</h3>
+        </div>
+    </div>
+</section>
+
+<script>
+    var currentHour = new Date().getHours();
+    var hero = document.getElementById("home");
+
+    if (currentHour > 6 && currentHour < 19)
+        hero.classList.add("morning");
+    else
+        hero.classList.add("night");
+
+    let cowClicked = 0;
+
+    function wakeCow() {
+        cowClicked++;
+
+        if (cowClicked == 3) {
+            hero.classList.add("morning");
+            hero.classList.remove("night");
+        }
+    }
+</script>
+
+{% include footer.html %}

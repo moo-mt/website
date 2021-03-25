@@ -1,0 +1,15 @@
+<section id="services" class="flex-center-center">
+  
+  <h2 class="heading">What we do</h2>
+  <h3 class="heading gradient">Unlimited possibilities</h3>
+
+  <div class="services inner-limit">
+    {% for service in site.data.services %}
+    <div class="service">
+      <div class="number">0{{forloop.index0 | plus: 1}}</div>
+      <h3>{{service.name}}</h3>
+      <div class="description">{{service.description}}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

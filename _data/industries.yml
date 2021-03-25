@@ -1,0 +1,18 @@
+- name: iGaming
+  icon: dice
+  description: During our 40 years+ combined experience we have built products for verticals across the whole iGaming industry, ranging from Sports, Casino, Poker, Jackpots, KYC, Payment providers and much more
+- name: FinTech
+  icon: money-bill-wave
+  description: We engineer innovative financial software systems that help investment banks, retail banks, insurance companies and wealth managers become more competitive, agile and flexible
+- name: Software & Platforms
+  icon: code
+  description: Our experience with high-traffic systems has taught us how to build scalable, resilient and event-driven systems using modern tech stacks and architecture principles
+- name: Travel
+  icon: plane-departure
+  description: Over 10 years combined experience building software in the travel industry integrating with GDSes, Flight, Hotel and Car Hire providers
+- name: Retail
+  icon: store
+  description: We have comprehensive expertise building online e-commerce & retail software and technology platforms that connect all parts of the e-commerce value chain
+- name:  GIS
+  icon: map-marked-alt
+  description: Our experience with developing and implementing Geographic Information Systems provides an ideal complement for organizations that track, study or use geographical data

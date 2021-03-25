@@ -1,42 +1,11 @@
 ---
+layout: default
 ---
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="language" content="english"> 
-    <meta http-equiv="content-type" content="text/html">
-
-    <title>{{ site.title }}</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relative_url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | relative_url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | relative_url }}">
-    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-    <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | relative_url }}" color="{{site.theme-color}}">
-    <meta name="msapplication-TileColor" content="#f6f6f6">
-    <meta name="theme-color" content="#f6f6f6">
-
-    <meta name="description" content="{{ site.description }}">
-
-    <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta property="og:image" content="{{ "/images/shareimage.png" | absolute_url }}" />
-
-
-    <link rel="stylesheet" href="{{ "css/styles.css" | relative_url }}?{{site.time | date: '%s'}}">
-</head>
-
-<body>
-    <div class="heroBackground">
-        <div class="hero"></div>
-    </div>
-
-    <footer>{{ site.ver }}</footer>
-    {% include pwa-module.html %}
-    {% include analytics.html %}
-</body>
-</html>
+{% include home.html %}
+{% include services.html %}
+{% include location.html %}
+{% include industries.html %}
+{% include expertise.html %}
+{% comment %}{% include partners.html %}{% endcomment %}
+{% include contact.html %}
+{% include footer.html %}

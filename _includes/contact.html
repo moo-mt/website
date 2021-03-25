@@ -1,0 +1,62 @@
+<section id="contactText" class="flex-center-center">
+  <div class="overlay"></div>
+    <h2>Not everything has to be a big deal</h2>
+    <h3 class="heading">We enjoy working on an hour-long advisory Zoom call as much as a long-term project</h3>
+</section>
+
+<section id="contact" class="flex-center-center">
+   <h2 class="heading">How can we help you?</h2>
+    <h3 class="heading gradient">Drop us a line</h3>
+    
+    <div class="contact inner-limit">
+      <div id="formContent">
+        <form name="submit-to-google-sheet">
+          <div class="form">
+            <div class="col">
+              <input name="name" type="text" placeholder="Your Name" required aria-label="Name" />
+              <input name="email" type="email" placeholder="Your Email" required aria-label="Email" />
+              <input name="phone" type="tel" placeholder="Your Mobile" required aria-label="Mobile" />
+            </div>
+            <div class="col">
+              <textarea name="message" placeholder="Your message" required aria-label="Message"></textarea>
+              <button type="submit" aria-label="Send">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="formSubmitted">
+        <h3>Your message has been sent!</h3>
+      </div>
+    </div>
+
+</section>
+
+<script>
+  const webhookURL = 'https://discord.com/api/webhooks/820406078276763689/jnMcnuw_I8Cjd8wR-eOK2q0-ozKglalyHrHNfeK5ipR7Ayj67vELm_xYHBKVAeaEta4v';
+
+  const form = document.forms["submit-to-google-sheet"];
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    var formData = new FormData(form);
+
+    var payload = JSON.stringify({
+      username: formData.get("name"),
+      content: `${formData.get("email")}\r\n${formData.get("phone")}\r\n${formData.get("message")}`
+    });
+
+    fetch(webhookURL, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: payload
+    })
+      .then((response) => {
+        console.log("Message Sent", response);
+        document.getElementById("formContent").style.display = "none";
+        document.getElementById("formSubmitted").style.display = "inline-block";
+      })
+      .catch((error) => console.error("Message not sent", error.message));
+  });
+</script>

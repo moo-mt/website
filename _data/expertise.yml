@@ -1,0 +1,40 @@
+- name: Application Services
+  icon: file-code
+- name: Artificial Intelligence
+  icon: brain
+- name: Automation
+  icon: robot
+- name: Distributed Agile
+  icon: users
+- name: Strategy
+  icon: chess
+- name: Change Management
+  icon: balance-scale-right
+- name: Cloud
+  icon: cloud
+- name: Corporate IT
+  icon: desktop
+- name: Data & Analytics
+  icon: database
+- name: DevOps
+  icon: terminal
+- name: Marketing
+  icon: ad
+- name: Infrastructure
+  icon: server
+- name: Networking
+  icon: network-wired
+- name: Security
+  icon: shield-alt
+- name: Sustainability
+  icon: leaf
+- name: Performance Analysis
+  icon: tachometer-alt
+- name: Quality Assurance
+  icon: bug
+- name: Architecture
+  icon: project-diagram
+- name: UI/UX
+  icon: paint-brush
+- name: Open Source
+  icon: code-branch
