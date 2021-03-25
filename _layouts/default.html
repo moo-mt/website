@@ -51,8 +51,5 @@
     <script src="{{ 'js/script.js' | relative_url }}?{{site.time | date: '%s' }}"></script>
 
     {% include pwa-module.html %}
-    {% if jekyll.environment == "production" %}
-        {% include analytics.html %}
-    {% endif %}    
 </body>
 </html>
