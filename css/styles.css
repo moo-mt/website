@@ -4,7 +4,7 @@ body, html { margin: 0; padding: 0; color: #828282; font-family: "Roboto", sans-
 
 h1, h2, h3, h4, h5, h6 { font-family: "Poppins", cursive; color: #232323; margin: 0; padding: 0; font-weight: 500; line-height: 1.5em; letter-spacing: -0.04em; }
 
-h1.gradient, h2.gradient, h3.gradient, h4.gradient, h5.gradient, h6.gradient { background: linear-gradient(to right, #5cc088, #95c250, #76e649, #36b6db, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
+h1.gradient, h2.gradient, h3.gradient, h4.gradient, h5.gradient, h6.gradient { background: linear-gradient(45deg, #5cc088, #95c250, #76e649, #36b6db, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
 
 h1 { text-transform: uppercase; font-size: 50pt; }
 
@@ -90,13 +90,13 @@ a { text-decoration: none; }
 
 #services .services .service .number { color: #828282; font-weight: 300; font-family: "Roboto", sans-serif; }
 
-#services .services .service h3 { font-size: 18pt; font-weight: bold; margin: 15px 0; font-family: "Poppins", cursive; background: linear-gradient(to right, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); filter: grayscale(1); }
+#services .services .service h3 { font-size: 18pt; font-weight: bold; margin: 15px 0; font-family: "Poppins", cursive; background: linear-gradient(45deg, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); filter: grayscale(1); }
 
 #services .services .service .description { color: #828282; font-weight: 300; line-height: 1.8em; font-family: "Roboto", sans-serif; }
 
 #location { background: #232323; padding: 150px 15px; background-size: cover; background-image: url("/images/malta.jpg"); background-position-x: 30%; background-position-y: center; position: relative; }
 
-#location .overlay { background-image: linear-gradient(to right, #5cc087, #95c250d0, #76e649ad, #36b6dbd0, #0084ed); position: absolute; height: 100%; width: 100%; opacity: 0.7; top: 0; left: 0; }
+#location .overlay { background-image: linear-gradient(45deg, #5cc087, #94c2509f, #75e649bd, #36b7dba2, #0082ed); position: absolute; height: 100%; width: 100%; opacity: 0.8; top: 0; left: 0; }
 
 #location .container { z-index: 9; }
 
@@ -116,7 +116,7 @@ a { text-decoration: none; }
 
 #industries .industries .industry:hover .iconInShape svg { opacity: 1; filter: grayscale(0%); }
 
-#industries .industries .industry h3 { background: linear-gradient(to right, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); filter: grayscale(100%); }
+#industries .industries .industry h3 { background: linear-gradient(45deg, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); filter: grayscale(100%); }
 
 #industries .industries .industry .iconInShape { position: relative; display: inline-block; }
 
@@ -130,7 +130,7 @@ a { text-decoration: none; }
 
 #expertise .expertise .experience { width: 220px; text-align: center; color: #828282; font-weight: 250; line-height: 1.8em; padding: 40px 0; text-transform: uppercase; opacity: 0.5; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); filter: grayscale(100%); }
 
-#expertise .expertise .experience i { font-size: 30pt; margin: 20px; color: #a1a1a1; background: linear-gradient(to right, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
+#expertise .expertise .experience i { font-size: 30pt; margin: 20px; color: #a1a1a1; background: linear-gradient(45deg, #5cc088, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
 
 #expertise .expertise .experience:hover { opacity: 1; filter: grayscale(0%); }
 
@@ -144,7 +144,7 @@ a { text-decoration: none; }
 
 #partners #partners-list a:hover img { opacity: 1; filter: grayscale(0); }
 
-#contactText { background-image: linear-gradient(to right, #5cc087, #95c250d0, #76e649ad, #36b6dbd0, #0084ed), url("/images/office.jpg"); background-repeat: no-repeat; background-size: cover; overflow: hidden; position: relative; background-position: center center; padding: 100px 15px; }
+#contactText { background-image: linear-gradient(45deg, #5cc087, #94c2509f, #75e649bd, #36b7dba2, #0082ed), url("/images/office.jpg"); background-repeat: no-repeat; background-size: cover; overflow: hidden; position: relative; background-position: center center; padding: 100px 15px; }
 
 #contactText h2 { color: #fff; font-size: 33pt; }
 
@@ -176,13 +176,13 @@ footer .text { color: #8890a4; }
 
 footer .text h5 { color: #8890a4; font-weight: 300; font-family: "Poppins", cursive; letter-spacing: -2px; }
 
-footer .text h5 a, footer .text h5 a.gradient:visited, footer .text h5 a.gradient:link { font-weight: 600; letter-spacing: -0.5px; background: linear-gradient(to right, #5cc088, #95c250, #76e649, #36b6db, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
+footer .text h5 a, footer .text h5 a.gradient:visited, footer .text h5 a.gradient:link { font-weight: 600; letter-spacing: -0.5px; background: linear-gradient(45deg, #5cc088, #95c250, #76e649, #36b6db, #0084ed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
 
 footer .footnote { font-size: 13px; }
 
 footer .logo { width: 100px; margin: 15px 0 0 0; aspect-ratio: 3324 / 957; }
 
-button, .button { margin: 0; font-family: "Poppins", cursive; border: 0; cursor: pointer; color: #ffffff; font-size: 12px; letter-spacing: 1px; padding: 12px 28px; text-transform: uppercase; background: linear-gradient(to right, #5cc088, #0084ed, #5cc088); background-size: 200% auto; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+button, .button { margin: 0; font-family: "Poppins", cursive; border: 0; cursor: pointer; color: #ffffff; font-size: 12px; letter-spacing: 1px; padding: 12px 28px; text-transform: uppercase; background: linear-gradient(45deg, #5cc088, #0084ed, #5cc088); background-size: 200% auto; transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 button:hover, .button:hover { background-position: right center; }
 
