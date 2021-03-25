@@ -4,7 +4,7 @@
 $gradient1: #5cc088, #95c250, #76e649, #36b6db, #0084ed;
 $gradient2: #5cc088, #0084ed, #5cc088;
 $gradient3: #5cc088, #0084ed;
-$gradient4: #5cc087, #94c250dc, #75e6498e, #36b7db7c, #0082ed69;
+$gradient4: #5cc087, #94c2509f, #75e649bd, #36b7dba2, #0082ed;
 
 @mixin gradient-text {
     @include gradient-text-stops($gradient1);
@@ -415,11 +415,11 @@ a {
     position: relative;
 
     .overlay {
-        background-image: linear-gradient(to right, $gradient4);
+        background-image: linear-gradient(45deg, $gradient4);
         position: absolute;
         height: 100%;
         width: 100%;
-        opacity: 0.7;
+        opacity: 0.8;
         top: 0;
         left: 0;
     }
@@ -574,7 +574,7 @@ a {
 }
 
 #contactText {
-    background-image: linear-gradient(to right, $gradient4),
+    background-image: linear-gradient(45deg, $gradient4),
     url('{{ "/images/office.jpg" | relative_url }}');
     background-repeat: no-repeat;
     background-size: cover;
