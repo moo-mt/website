@@ -391,6 +391,7 @@ a {
                 margin: 15px 0;
                 font-family: $font-family-headings;
                 @include gradient-text-stops($gradient3);
+                display: inline-block;
                 transition: $transition-default;
                 filter: grayscale(1);
             }
@@ -481,11 +482,11 @@ a {
                 @include gradient-text-stops($gradient3);
                 transition: $transition-default;
                 filter: grayscale(100%);
+                display: inline-block;
             }
 
             .iconInShape {
                 position: relative;
-                display: inline-block;
 
                 svg {
                     transition: $transition-default;
