@@ -1,10 +1,10 @@
 ---
 ---
 
-$gradient1: #5cc088, #50c28d, #83b879, #c9a95e, #dda556;
-$gradient2: #5cc088, #e7a965, #5cc088;
-$gradient3: #5cc088, #dda556;
-$gradient4: #5cc087, #50c28dd0, #84b879ad, #c9a95ed0, #dda556;
+$gradient1: #5cc088, #95c250, #76e649, #36b6db, #0084ed;
+$gradient2: #5cc088, #0084ed, #5cc088;
+$gradient3: #5cc088, #0084ed;
+$gradient4: #5cc087, #95c250d0, #76e649ad, #36b6dbd0, #0084ed;
 
 @mixin gradient-text {
     @include gradient-text-stops($gradient1);
