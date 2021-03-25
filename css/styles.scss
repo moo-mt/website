@@ -4,8 +4,7 @@
 $gradient1: #5cc088, #50c28d, #83b879, #c9a95e, #dda556;
 $gradient2: #5cc088, #e7a965, #5cc088;
 $gradient3: #5cc088, #dda556;
-$gradient4: #5cc088, #50c28d, #83b879, #c9a95e, #dda556;
-$gradient5: #5cc087, #50c28dd0, #84b879ad, #c9a95ed0, #dda556;
+$gradient4: #5cc087, #50c28dd0, #84b879ad, #c9a95ed0, #dda556;
 
 @mixin gradient-text {
     @include gradient-text-stops($gradient1);
@@ -416,11 +415,11 @@ a {
     position: relative;
 
     .overlay {
-        background-color: #1f232c;
+        background-image: linear-gradient(to right, $gradient4);
         position: absolute;
         height: 100%;
         width: 100%;
-        opacity: 0.5;
+        opacity: 0.7;
         top: 0;
         left: 0;
     }
@@ -442,7 +441,7 @@ a {
         letter-spacing: 1px;
         font-size: 14px;
         font-weight: 400;
-        opacity: 0.8;
+        // opacity: 0.8;
     }
 }
 
@@ -575,13 +574,13 @@ a {
 }
 
 #contactText {
-    background-image: linear-gradient(to right, $gradient5),
-        url(https://lithohtml.themezaa.com/images/home-business-parallax-bg.jpg);
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-image: linear-gradient(to right, $gradient4),
+    url('{{ "/images/office.jpg" | relative_url }}');
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     position: relative;
-    background-position: center center !important;
+    background-position: center center;
     padding: 100px 15px;
 
     h2 {
@@ -591,6 +590,7 @@ a {
 
     h3 {
         color: #fff;
+        opacity: 0.8;
     }
 }
 
