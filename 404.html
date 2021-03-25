@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="language" content="english">
+    <meta http-equiv="content-type" content="text/html">
+
+    <title>moo - The tech consultants</title>
+
+    <link rel="apple-touch-icon" sizes="192x192" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F7F7F7">
+    <meta name="msapplication-TileColor" content="#f6f6f6">
+    <meta name="theme-color" content="#F7F7F7"/>
+
+    <meta name="description" content="moo is a tech consultancy company that aims to solve tough problems with technology. We advise, train, audit and research for companies all over the world">
+
+    <meta property="og:title" content="moo - The tech consultants" />
+    <meta property="og:description" content="moo is a tech consultancy company that aims to solve tough problems with technology. We advise, train, audit and research for companies all over the world" />
+    <meta property="og:image" content="https://moo.mt/images/shareimage.png" />
+    <link rel="preconnect" href="https://storage.googleapis.com/">
+    <link rel="preconnect" href="https://ka-f.fontawesome.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css?1616666488">
+</head>
+
+<body onclick>
+    <section id="home">
+    <nav id="logo">
+    <a href="/">
+        <img class="logo" src="/images/logo.svg" alt="moo Logo">
+    </a>
+</nav>
+    <div id="home-background-stars"></div>
+    <div id="home-background-moon"></div>
+    <div id="home-background"></div>
+    <div id="home-background-inverted"></div>
+    <div id="home-inner" class="min-100vh flex-center-center">
+        <div id="cow" onclick="wakeCow()"></div>
+        <div id="home-inner-content">
+            <h1>Ooops!</h1>
+            <h1><strong>I think you're lost</strong></h1>
+            <h3>404</h3>
+        </div>
+    </div>
+</section>
+
+<script>
+    var currentHour = new Date().getHours();
+    var hero = document.getElementById("home");
+
+    if (currentHour > 6 && currentHour < 19)
+        hero.classList.add("morning");
+    else
+        hero.classList.add("night");
+
+    let cowClicked = 0;
+
+    function wakeCow() {
+        cowClicked++;
+
+        if (cowClicked == 3) {
+            hero.classList.add("morning");
+            hero.classList.remove("night");
+        }
+    }
+</script>
+
+<footer>
+    <div class="inner">
+        <div class="social">
+            <a href="https://www.facebook.com/moo.consult/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/moo-mt/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/moo-mt/" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="text">
+            <h5>Want to pick our brains? Send us an email</h5>
+            <h5><a href="mailto:info@moo.mt" class="gradient">info@moo.mt</a></h5>
+        </div>
+        <div class="footnote">
+            <div>
+                This website is open-source at <a href="https://github.com/moo-mt/website" target="_blank" rel="noopener">moo-mt/website</a>.
+            </div>
+            <a href="/">
+                <img class="logo" src="/images/logo.svg" alt="moo Logo">
+            </a>
+            <div style="display: none;">1.0.0</div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://kit.fontawesome.com/67d6b9b43b.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js?1616666488"></script>
+
+    <script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+</script>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VB25BQCDFK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VB25BQCDFK');
+</script>
+        
+</body>
+</html>

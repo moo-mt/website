@@ -4,43 +4,475 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="language" content="english"> 
+    <meta name="language" content="english">
     <meta http-equiv="content-type" content="text/html">
 
-    <title>moo</title>
+    <title>moo - The tech consultants</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#349261">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F7F7F7">
     <meta name="msapplication-TileColor" content="#f6f6f6">
-    <meta name="theme-color" content="#f6f6f6">
+    <meta name="theme-color" content="#F7F7F7"/>
 
-    <meta name="description" content="moo is a tech consultancy company that aims to solve tough problems with technology. We help our clients achieve technical excellence, strengthen their core technologies, scale with flexibility and create seamless digital experiences.">
+    <meta name="description" content="moo is a tech consultancy company that aims to solve tough problems with technology. We advise, train, audit and research for companies all over the world">
 
-    <meta property="og:title" content="moo" />
-    <meta property="og:description" content="moo is a tech consultancy company that aims to solve tough problems with technology. We help our clients achieve technical excellence, strengthen their core technologies, scale with flexibility and create seamless digital experiences." />
+    <meta property="og:title" content="moo - The tech consultants" />
+    <meta property="og:description" content="moo is a tech consultancy company that aims to solve tough problems with technology. We advise, train, audit and research for companies all over the world" />
     <meta property="og:image" content="https://moo.mt/images/shareimage.png" />
+    <link rel="preconnect" href="https://storage.googleapis.com/">
+    <link rel="preconnect" href="https://ka-f.fontawesome.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-
-    <link rel="stylesheet" href="/css/styles.css?1616449024">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css?1616666488">
 </head>
 
-<body>
-    <div class="heroBackground">
-        <div class="hero"></div>
+<body onclick>
+    <section id="home">
+    <nav id="logo">
+    <a href="/">
+        <img class="logo" src="/images/logo.svg" alt="moo Logo">
+    </a>
+</nav>
+    <div id="home-background-stars"></div>
+    <div id="home-background-moon"></div>
+    <div id="home-background"></div>
+    <div id="home-background-inverted"></div>
+    <div id="home-inner" class="min-100vh flex-center-center">
+        <div id="cow" onclick="wakeCow()"></div>
+        <div id="home-inner-content">
+            <h1>We provide</h1>
+            <h1 id="heroTyper"></h1>
+            <h1>to <strong>complex</strong> problems</h1>
+        </div>
+    </div>
+</section>
+
+<script>
+    var currentHour = new Date().getHours();
+    var hero = document.getElementById("home");
+
+    if (currentHour > 6 && currentHour < 19)
+        hero.classList.add("morning");
+    else
+        hero.classList.add("night");
+
+    let cowClicked = 0;
+
+    function wakeCow() {
+        cowClicked++;
+
+        if (cowClicked == 3) {
+            console.warn("You've woken the cow!!");
+            hero.classList.add("woken");
+        }
+    }
+</script>
+<section id="services" class="flex-center-center">
+  
+  <h2 class="heading">What we do</h2>
+  <h3 class="heading gradient">Unlimited possibilities</h3>
+
+  <div class="services inner-limit">
+    
+    <div class="service">
+      <div class="number">01</div>
+      <h3>Consult</h3>
+      <div class="description">We are well positioned to help drive change because of our team's variety of cross-industry perspectives, independence and broad experience developing and deploying leading-edge technologies and products.</div>
+    </div>
+    
+    <div class="service">
+      <div class="number">02</div>
+      <h3>Train</h3>
+      <div class="description">We help develop companies' technology workforce, making their teams know more and work better together. We build bespoke training material and sessions so that teams develop the skills of tomorrow.</div>
+    </div>
+    
+    <div class="service">
+      <div class="number">03</div>
+      <h3>Audit</h3>
+      <div class="description">We have been at both ends of audits. Our industry certified auditors work with you to audit your organization or to help your company prepare for Software, Infrastructure, Architecture or Security audits.</div>
+    </div>
+    
+    <div class="service">
+      <div class="number">04</div>
+      <h3>Recruit</h3>
+      <div class="description">We guide companies that need to venture into areas where they have no in-house expertise. Our skilled consultants can interview your candidates and give recommendations depending on your vision or project.</div>
+    </div>
+    
+    <div class="service">
+      <div class="number">05</div>
+      <h3>Secure</h3>
+      <div class="description">We build security-first cultures. Our security architects work with organizations to help them build and implement security policies, starting from their corporate networks to their production networks and applications.</div>
+    </div>
+    
+    <div class="service">
+      <div class="number">06</div>
+      <h3>Research</h3>
+      <div class="description">We equip organizations with unmatched insights and data-driven, independent and objective research gathered by our experienced advisors; personalized to the organization's use case, whatever it may be.</div>
+    </div>
+    
+    <div class="service">
+      <div class="number">07</div>
+      <h3>Outsource</h3>
+      <div class="description">We have good relationships with a variety of reputable tech outsourcing companies. Depending on your needs we can bridge the gap between your organization and the outsourced teams to maximize business performance and cut operating costs.</div>
+    </div>
+    
+    <div class="service">
+      <div class="number">08</div>
+      <h3>Innovate</h3>
+      <div class="description">We understand that innovation can be difficult. Sometimes you need to introduce fresh ideas from external talent. We work with organizations and run innovation and brainstorming sessions to challenge your norms.</div>
+    </div>
+    
+    <div class="service">
+      <div class="number">09</div>
+      <h3>Build</h3>
+      <div class="description">We transform your ideas into code. Do you want to develop new applications or re-engineer your core, legacy systems with technological innovations that boost performance, agility, scalability and improve UX. We'll help you get there.</div>
+    </div>
+    
+  </div>
+</section>
+<div id="location" class="flex-center-center">
+    <div class="overlay"></div>
+    <div class="container">
+        <h2 class="heading">
+            We advise clients<br />
+            all over the world
+        </h2>
+        <h3 class="heading">We're based in Malta but remote work is our thing</h3>
+    </div>
+</div>
+<section id="industries" class="flex-center-center">
+  <div class="industries inner-limit">
+    
+    <div class="industry">
+      <div class="iconInShape">
+        <svg width="100" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#5cc088" />
+              <stop offset="100%" stop-color="#0084ed" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad)"
+            d="M86.2,51.4C58.6,97.5,-53.4,96.5,-81.8,49.9C-110.3,3.3,-55.1,-88.8,0.9,-88.3C56.9,-87.8,113.7,5.3,86.2,51.4Z">
+          </path>
+        </svg>
+        <i class="fas fa-dice"></i>
+      </div>
+      <h3>iGaming</h3>
+      <p>During our 40 years+ combined experience we have built products for verticals across the whole iGaming industry, ranging from Sports, Casino, Poker, Jackpots, KYC, Payment providers and much more</p>
+    </div>
+    
+    <div class="industry">
+      <div class="iconInShape">
+        <svg width="100" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#5cc088" />
+              <stop offset="100%" stop-color="#0084ed" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad)"
+            d="M86.2,51.4C58.6,97.5,-53.4,96.5,-81.8,49.9C-110.3,3.3,-55.1,-88.8,0.9,-88.3C56.9,-87.8,113.7,5.3,86.2,51.4Z">
+          </path>
+        </svg>
+        <i class="fas fa-money-bill-wave"></i>
+      </div>
+      <h3>FinTech</h3>
+      <p>We engineer innovative financial software systems that help investment banks, retail banks, insurance companies and wealth managers become more competitive, agile and flexible</p>
+    </div>
+    
+    <div class="industry">
+      <div class="iconInShape">
+        <svg width="100" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#5cc088" />
+              <stop offset="100%" stop-color="#0084ed" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad)"
+            d="M86.2,51.4C58.6,97.5,-53.4,96.5,-81.8,49.9C-110.3,3.3,-55.1,-88.8,0.9,-88.3C56.9,-87.8,113.7,5.3,86.2,51.4Z">
+          </path>
+        </svg>
+        <i class="fas fa-code"></i>
+      </div>
+      <h3>Software & Platforms</h3>
+      <p>Our experience with high-traffic systems has taught us how to build scalable, resilient and event-driven systems using modern tech stacks and architecture principles</p>
+    </div>
+    
+    <div class="industry">
+      <div class="iconInShape">
+        <svg width="100" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#5cc088" />
+              <stop offset="100%" stop-color="#0084ed" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad)"
+            d="M86.2,51.4C58.6,97.5,-53.4,96.5,-81.8,49.9C-110.3,3.3,-55.1,-88.8,0.9,-88.3C56.9,-87.8,113.7,5.3,86.2,51.4Z">
+          </path>
+        </svg>
+        <i class="fas fa-plane-departure"></i>
+      </div>
+      <h3>Travel</h3>
+      <p>Over 10 years combined experience building software in the travel industry integrating with GDSes, Flight, Hotel and Car Hire providers</p>
+    </div>
+    
+    <div class="industry">
+      <div class="iconInShape">
+        <svg width="100" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#5cc088" />
+              <stop offset="100%" stop-color="#0084ed" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad)"
+            d="M86.2,51.4C58.6,97.5,-53.4,96.5,-81.8,49.9C-110.3,3.3,-55.1,-88.8,0.9,-88.3C56.9,-87.8,113.7,5.3,86.2,51.4Z">
+          </path>
+        </svg>
+        <i class="fas fa-store"></i>
+      </div>
+      <h3>Retail</h3>
+      <p>We have comprehensive expertise building online e-commerce & retail software and technology platforms that connect all parts of the e-commerce value chain</p>
+    </div>
+    
+    <div class="industry">
+      <div class="iconInShape">
+        <svg width="100" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#5cc088" />
+              <stop offset="100%" stop-color="#0084ed" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad)"
+            d="M86.2,51.4C58.6,97.5,-53.4,96.5,-81.8,49.9C-110.3,3.3,-55.1,-88.8,0.9,-88.3C56.9,-87.8,113.7,5.3,86.2,51.4Z">
+          </path>
+        </svg>
+        <i class="fas fa-map-marked-alt"></i>
+      </div>
+      <h3>GIS</h3>
+      <p>Our experience with developing and implementing Geographic Information Systems provides an ideal complement for organizations that track, study or use geographical data</p>
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="expertise" class="flex-center-center">
+    <h2 class="heading">What we know</h2>
+    <h3 class="heading gradient">Our Expertise</h3>
+
+  <div class="expertise inner-limit">
+    
+    
+    <div class="experience">
+      <i class="fas fa-file-code"></i>
+      <h4>Application Services</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-project-diagram"></i>
+      <h4>Architecture</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-brain"></i>
+      <h4>Artificial Intelligence</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-robot"></i>
+      <h4>Automation</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-balance-scale-right"></i>
+      <h4>Change Management</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-cloud"></i>
+      <h4>Cloud</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-desktop"></i>
+      <h4>Corporate IT</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-database"></i>
+      <h4>Data & Analytics</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-terminal"></i>
+      <h4>DevOps</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-users"></i>
+      <h4>Distributed Agile</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-server"></i>
+      <h4>Infrastructure</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-ad"></i>
+      <h4>Marketing</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-network-wired"></i>
+      <h4>Networking</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-code-branch"></i>
+      <h4>Open Source</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-tachometer-alt"></i>
+      <h4>Performance Analysis</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-bug"></i>
+      <h4>Quality Assurance</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-shield-alt"></i>
+      <h4>Security</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-chess"></i>
+      <h4>Strategy</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-leaf"></i>
+      <h4>Sustainability</h4>
+    </div>
+    
+    <div class="experience">
+      <i class="fas fa-paint-brush"></i>
+      <h4>UI/UX</h4>
+    </div>
+    
+  </div>
+</section>
+
+<section id="contactText" class="flex-center-center">
+  <div class="overlay"></div>
+    <h2>Not everything has to be a big deal</h2>
+    <h3 class="heading">We enjoy working on an hour-long advisory Zoom call as much as a long-term project</h3>
+</section>
+
+<section id="contact" class="flex-center-center">
+   <h2 class="heading">How can we help you?</h2>
+    <h3 class="heading gradient">Drop us a line</h3>
+    
+    <div class="contact inner-limit">
+      <div id="formContent">
+        <form name="submit-to-google-sheet">
+          <div class="form">
+            <div class="col">
+              <input name="name" type="text" placeholder="Your Name" required aria-label="Name" />
+              <input name="email" type="email" placeholder="Your Email" required aria-label="Email" />
+              <input name="phone" type="tel" placeholder="Your Mobile" required aria-label="Mobile" />
+            </div>
+            <div class="col">
+              <textarea name="message" placeholder="Your message" required aria-label="Message"></textarea>
+              <button type="submit" aria-label="Send">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="formSubmitted">
+        <h3>Your message has been sent!</h3>
+      </div>
     </div>
 
-    <footer>0.3.34</footer>
+</section>
+
+<script>
+  const webhookURL = 'https://discord.com/api/webhooks/820406078276763689/jnMcnuw_I8Cjd8wR-eOK2q0-ozKglalyHrHNfeK5ipR7Ayj67vELm_xYHBKVAeaEta4v';
+
+  const form = document.forms["submit-to-google-sheet"];
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    var formData = new FormData(form);
+
+    var payload = JSON.stringify({
+      username: formData.get("name"),
+      content: `${formData.get("email")}\r\n${formData.get("phone")}\r\n${formData.get("message")}`
+    });
+
+    fetch(webhookURL, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: payload
+    })
+      .then((response) => {
+        console.log("Message Sent", response);
+        document.getElementById("formContent").style.display = "none";
+        document.getElementById("formSubmitted").style.display = "inline-block";
+      })
+      .catch((error) => console.error("Message not sent", error.message));
+  });
+</script>
+<footer>
+    <div class="inner">
+        <div class="social">
+            <a href="https://www.facebook.com/moo.consult/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/moo-mt/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/moo-mt/" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="text">
+            <h5>Want to pick our brains? Send us an email</h5>
+            <h5><a href="mailto:info@moo.mt" class="gradient">info@moo.mt</a></h5>
+        </div>
+        <div class="footnote">
+            <div>
+                This website is open-source at <a href="https://github.com/moo-mt/website" target="_blank" rel="noopener">moo-mt/website</a>.
+            </div>
+            <a href="/">
+                <img class="logo" src="/images/logo.svg" alt="moo Logo">
+            </a>
+            <div style="display: none;">1.0.0</div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://kit.fontawesome.com/67d6b9b43b.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js?1616666488"></script>
+
     <script type="module">
     import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 
     const el = document.createElement('pwa-update');
     document.body.appendChild(el);
 </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB25BQCDFK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -49,5 +481,6 @@
 
   gtag('config', 'G-VB25BQCDFK');
 </script>
+        
 </body>
 </html>
