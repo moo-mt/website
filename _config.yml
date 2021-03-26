@@ -3,6 +3,7 @@ description: moo is a tech consultancy company that aims to solve tough problems
 url: https://moo.mt
 email: info@moo.mt
 exclude: [".jekyll-cache", ".bundle", ".github", "Gemfile*", ".gitignore", "GitVersion.yml", ".git", "README.md", ".kodiak.toml", ".nojekyll", "LICENSE"]
+include: [".well-known"]
 ver: 0.0.0-local
 livereload: true
 theme-color: "#F7F7F7"
