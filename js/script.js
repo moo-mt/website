@@ -1,13 +1,13 @@
-window.addEventListener('beforeinstallprompt', (e) => {
+window.addEventListener("beforeinstallprompt", (e) => {
   e.preventDefault();
-  console.log(`'beforeinstallprompt' event was fired and popup blocked`);
+  console.log("'beforeinstallprompt' event was fired and popup blocked");
 });
 
 new TypeIt("#heroTyper", {
   speed: 75,
   loop: true,
   waitUntilVisible: true,
-  cursorChar: '_'
+  cursorChar: "_"
 })
   .type("<strong>reliable</strong> solutions", { delay: 1500 }).move(-10).delete(-8)
   .type("<strong>ingenious</strong>", { delay: 1500 }).delete(-9)
@@ -29,14 +29,14 @@ let observer = new IntersectionObserver(callback, {
   threshold: 0.9
 });
 
-document.querySelectorAll('.industry').forEach(target => {
+document.querySelectorAll(".industry").forEach(target => {
   observer.observe(target);
 });
 
-document.querySelectorAll('.experience').forEach(target => {
+document.querySelectorAll(".experience").forEach(target => {
   observer.observe(target);
 });
 
-document.querySelectorAll('.service').forEach(target => {
+document.querySelectorAll(".service").forEach(target => {
   observer.observe(target);
 });
