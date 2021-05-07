@@ -76,6 +76,8 @@ a { text-decoration: none; }
 
 #home.night #home-inner #home-inner-content h1, #home.night #home-inner #home-inner-content h2, #home.night #home-inner #home-inner-content h3 { filter: drop-shadow(0px 0px 7px #000e1b); }
 
+#home.night:after { position: absolute; width: 0; height: 0; overflow: hidden; z-index: -1; content: url("/images/hero/woken-cow.png"); }
+
 #home.night.woken #home-inner #cow { background-image: url("/images/hero/woken-cow.png"); bottom: 50px; cursor: default; }
 
 #services { background: #f7f7f7; padding: 100px 10px; }
