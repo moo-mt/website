@@ -341,6 +341,16 @@ a {
                 }
             }
         }
+        
+        // This is used to preload the image being used by the `woken` class in order to have a smoother transition
+        &:after {
+            position: absolute;
+            width:0;
+            height:0;
+            overflow:hidden;
+            z-index:-1;
+            content: url('{{ "/images/hero/woken-cow.png" | relative_url }}');
+        }
 
         &.woken #home-inner #cow {
             background-image: url('{{ "/images/hero/woken-cow.png" | relative_url }}');
