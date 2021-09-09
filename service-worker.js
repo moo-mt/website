@@ -47,7 +47,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  new RegExp(/.*(css|png|js).*/),
+  new RegExp(/.*(css|png|js|svg).*/),
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: "misc-static-StaleWhileRevalidate"
   })
