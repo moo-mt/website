@@ -28,12 +28,6 @@ jobs:
       id: gitversion # step id used as reference for output values
       uses: gittools/actions/gitversion/execute@v0.9.10
 
-    - name: Replace Version in _config.yml
-      uses: datamonsters/replace-action@v2
-      with:
-        files: '_config.yml'
-        replacements: '0.0.0-local=${{ steps.gitversion.outputs.semVer }}'
-
     - name: 'Build Site'
       run: bundle exec jekyll build
 
