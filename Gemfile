@@ -16,3 +16,4 @@ gem "wdm", "= 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "webrick", "= 1.7.0"
 gem 'eventmachine', "= 1.2.7"
+gem 'jekyll-environment-variables', '~> 1.0', '>= 1.0.1'

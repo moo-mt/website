@@ -8,3 +8,5 @@ ver: 0.0.0-local
 livereload: true
 theme-color: "#F7F7F7"
 host: 0.0.0.0
+plugins:  # "gems" before Jekyll 3.5
+  - jekyll-environment-variables
