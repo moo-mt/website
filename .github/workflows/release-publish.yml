@@ -36,6 +36,8 @@ jobs:
 
     - name: 'Build Site'
       run: JEKYLL_ENV=production bundle exec jekyll build
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
