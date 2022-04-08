@@ -32,7 +32,7 @@ jobs:
       run: bundle exec jekyll build
 
     - name: Upload Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: moo.mt_${{ steps.gitversion.outputs.semVer }}
         path: ./_site
